@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {buildEvidenceRecord,validateSecUrl,fetchSecExhibit} from '../packages/sec-ingestion/engine.mjs';
+import {createReview} from '../packages/sec-review/engine.mjs';
+const sec='https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm';
+const text='2.8 Shipping and Delivery\nFOB Shenzhen.\n11.16 Arbitration\nBinding arbitration under rules.';
+test('valid SEC exhibit URL and deny lookalikes',()=>{assert.equal(validateSecUrl(sec),sec);for(const u of ['https://evil.com/a','http://www.sec.gov/Archives/edgar/data/1/2/a.htm','https://www.sec.gov.evil.com/Archives/edgar/data/1/2/a.htm'])assert.throws(()=>validateSecUrl(u))});
+test('ingestion calculates stable hash and never certifies completeness',()=>{let x=buildEvidenceRecord(Buffer.from(text),{documentId:'CN-TEST',sourceUrl:sec,format:'text'});assert.equal(x.source_sha256.length,64);assert.equal(x.candidate_count,2);assert.equal(x.source_completeness,'not_verified');assert.equal(x.candidates[0].review_status,'machine_candidate_unreviewed')});
+test('missing SEC contact identity prevents network request',async()=>{await assert.rejects(fetchSecExhibit(sec,{userAgent:'',fetchImpl:()=>{throw Error('network invoked')}}))});
+test('review rejects silent promotion',()=>{let c=buildEvidenceRecord(text,{documentId:'CN-TEST',format:'text'}).candidates[0];assert.throws(()=>createReview(c,{decision:'verified',reviewer:'Analyst',reviewedAt:'2026-10-08'}));});
+test('explicitly verified record carries provenance but no legal outcome',()=>{let c=buildEvidenceRecord(text,{documentId:'CN-TEST',format:'text'}).candidates[0];let r=createReview(c,{decision:'verified',reviewer:'Analyst',reviewedAt:'2026-10-08',sourceChecked:true,verifiedSection:'2.8',evidenceQuote:'FOB Shenzhen.'});assert.equal(r.review_status,'human_verified_clause');assert.equal(r.legal_conclusion,null)});
+test('reject candidate requires reviewer',()=>{let c=buildEvidenceRecord(text,{documentId:'CN-TEST',format:'text'}).candidates[0];assert.throws(()=>createReview(c,{decision:'rejected'}));});
