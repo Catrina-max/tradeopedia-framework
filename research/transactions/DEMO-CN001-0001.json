@@ -1,0 +1,66 @@
+{
+  "id": "DEMO-CN001-0001",
+  "synthetic": true,
+  "scenario": "Illustrative shipment only; no facts about real Owlet imports are asserted",
+  "contract": {
+    "research_id": "CN-001",
+    "applicable_terms": {
+      "status": "unverified"
+    }
+  },
+  "parties": {
+    "purchaser": "Illustrative U.S. importer",
+    "supplier": "Illustrative PRC manufacturer"
+  },
+  "documents": {
+    "purchase_order": {
+      "status": "present",
+      "reference": "SYN-PO-001"
+    },
+    "commercial_invoice": {
+      "status": "present",
+      "reference": "SYN-INV-001"
+    },
+    "entry_summary": {
+      "status": "missing"
+    },
+    "origin_support": {
+      "status": "unverified"
+    },
+    "classification_support": {
+      "status": "missing"
+    },
+    "broker_communications": {
+      "status": "missing"
+    },
+    "contract": {
+      "status": "unverified"
+    },
+    "cbp_notice": {
+      "status": "missing"
+    }
+  },
+  "entry": {
+    "importer_of_record": {
+      "status": "unverified"
+    },
+    "hts": {
+      "status": "unverified"
+    }
+  },
+  "origin": {
+    "country": {
+      "status": "unverified",
+      "claimed_value": "CN"
+    }
+  },
+  "cbp": {
+    "action": "notice",
+    "demand_amount_usd": 12500,
+    "amount_status": "synthetic_assumption"
+  },
+  "supplier_claim": {
+    "basis": "possible documentation inaccuracy",
+    "status": "hypothetical"
+  }
+}
