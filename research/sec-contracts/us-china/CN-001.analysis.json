@@ -1,0 +1,153 @@
+{
+  "id": "CN-001",
+  "title": "Owlet / Shenzhen Aoni \u2014 working clause map",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+  "evidence_status": "first-pass primary-source mapping; not a legal conclusion",
+  "reviewed_on": "2026-10-08",
+  "records": [
+    {
+      "section_as_printed": "2.2",
+      "category": "Order precedence",
+      "finding": "Master agreement governs conflicts first; then purchase order",
+      "status": "observed",
+      "caveat": "Order document needed for shipment-level application",
+      "tag": "purchase-order",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "2.8",
+      "category": "Delivery / Incoterms",
+      "finding": "FOB Shenzhen under Incoterms 2010; allocates expense and risk per term",
+      "status": "observed",
+      "caveat": "Does not by itself identify U.S. importer of record",
+      "tag": "shipment",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "3.5",
+      "category": "Manufacturing records",
+      "finding": "Supplier maintains manufacturing and testing records and provides reasonable buyer access",
+      "status": "observed",
+      "caveat": "Not equivalent to an identified CBP entry-record duty",
+      "tag": "records",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "3.6",
+      "category": "Subcontracting",
+      "finding": "Supplier subcontracting arrangements are separately addressed",
+      "status": "located-needs-analysis",
+      "caveat": "Subcontracting details need expanded review",
+      "tag": "supplier",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "3.9",
+      "category": "Supply-chain security",
+      "finding": "Security controls and corrective-action reports for identified violations",
+      "status": "observed",
+      "caveat": "Not evidence of UFLPA compliance for any shipment",
+      "tag": "supply-chain",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "7.1",
+      "category": "Compliance with laws",
+      "finding": "Supplier compliance covenant covers applicable laws related to its activities",
+      "status": "observed",
+      "caveat": "Extent of recoverable customs charges not established",
+      "tag": "compliance",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "7.3",
+      "category": "Incorporated quality agreement",
+      "finding": "Supplier Quality Agreement Exhibit C incorporated by reference",
+      "status": "observed",
+      "caveat": "Exhibit C scope/availability and amendments require checking",
+      "tag": "dependency",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "7.6",
+      "category": "Recordkeeping",
+      "finding": "Supplier must create and maintain records sufficient to demonstrate contractual compliance",
+      "status": "observed",
+      "caveat": "Distinct from importer statutory recordkeeping",
+      "tag": "records",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "Article VIII",
+      "category": "Incorporated confidentiality",
+      "finding": "Confidentiality terms from Exhibit D or similar contract incorporated",
+      "status": "observed",
+      "caveat": "Review whether Exhibit D is complete and operative",
+      "tag": "dependency",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "9.1 (body)",
+      "category": "Indemnification",
+      "finding": "Supplier indemnity covers enumerated claims including certain breaches and legal violations",
+      "status": "observed",
+      "caveat": "Recovery for specific duties/penalties not resolved",
+      "tag": "remedy",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "9.2 (body)",
+      "category": "Damages limits",
+      "finding": "Text limits certain damage categories but contains inconsistent reference to \u00a79.3",
+      "status": "observed-with-anomaly",
+      "caveat": "Section table of contents labels differ from operative body",
+      "tag": "anomaly",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "11.15",
+      "category": "Governing law",
+      "finding": "New York law designated without conflicts principles",
+      "status": "observed",
+      "caveat": "CISG exclusion not determined merely from a state-law selection",
+      "tag": "law",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    },
+    {
+      "section_as_printed": "11.16",
+      "category": "Dispute pathway",
+      "finding": "Direct negotiation then possible binding ICDR arbitration in New York City",
+      "status": "observed-with-anomaly",
+      "caveat": "Arbitration subclause refers to \u00a711.14(a) although negotiation is in \u00a711.16(a)",
+      "tag": "dispute",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm"
+    }
+  ],
+  "issues": [
+    {
+      "type": "cross_reference_inconsistency",
+      "locator": "\u00a711.16(b)",
+      "text_issue": "Refers to \u00a711.14(a), but direct negotiation appears in \u00a711.16(a)",
+      "resolution": "unresolved; preserve original numbering"
+    },
+    {
+      "type": "section_label_inconsistency",
+      "locator": "Article IX",
+      "text_issue": "Contents identifies indemnification at \u00a79.2 and damages exclusion at \u00a79.3; operative text labels them \u00a79.1 and \u00a79.2",
+      "resolution": "unresolved; use both printed body and contents metadata"
+    },
+    {
+      "type": "incorporated_document",
+      "locator": "\u00a77.3 / Article VIII",
+      "text_issue": "Quality and confidentiality terms are incorporated from exhibits/contracts",
+      "resolution": "exhibit-level verification pending"
+    }
+  ],
+  "questions": [
+    "Which entity actually filed the U.S. import entry?",
+    "What supporting customs entry and purchase order records exist?",
+    "Are country-of-origin statements or duty-specific indemnities documented elsewhere?",
+    "What is the effect of inconsistent cross-references?",
+    "Does the CISG apply absent effective exclusion?"
+  ]
+}
