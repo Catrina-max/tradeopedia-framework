@@ -1,0 +1,1006 @@
+{
+  "schema_version": "0.9.0",
+  "document_id": "OWLET-AONI-2018",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+  "acquisition": "user_saved_file",
+  "acquired_at": null,
+  "source_format": "html",
+  "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b",
+  "source_bytes": 322370,
+  "source_completeness": "not_verified",
+  "source_status": "acquired_unverified",
+  "extraction_status": "machine_candidate_unreviewed",
+  "candidate_count": 54,
+  "candidates": [
+    {
+      "id": "OWLET-AONI-2018:1.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.2",
+      "heading_as_printed": "\"Applicable Laws\" means all applicable U.S. federal, state and local and P.R.C. laws, rules,",
+      "start_line": 898,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "1.2 \"Applicable Laws\" means all applicable U.S. federal, state and local and P.R.C. laws, rules, regulations, common law, statutes, ordinances, codes, requirements or orders of any Governmental Authority, including, but not limited to, the Federal Food, Drug and Cosmetic Act, as amended, and the regulations promulgated thereunder.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.7:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.7",
+      "heading_as_printed": "\"Certificate of Compliance\" shall mean a written certification or certifications signed by Supplier and delivered to Owlet",
+      "start_line": 958,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "1.7 \"Certificate of Compliance\" shall mean a written certification or certifications signed by Supplier and delivered to Owlet stating that the applicable batch or lot of Product was processed in accordance with the agreed upon Specifications and that lists the applicable specification range, test method and results",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.20:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.20",
+      "heading_as_printed": "\"Product\" or \"Products\" shall mean the product or products manufactured or supplied by Supplier under this Agreement, as",
+      "start_line": 1053,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "1.20 \"Product\" or \"Products\" shall mean the product or products manufactured or supplied by Supplier under this Agreement, as described at Exhibit A .",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.23:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.23",
+      "heading_as_printed": "\" Regulatory Authority \" means, any Governmental Authority involved in granting approval of the investigation, manufacture,",
+      "start_line": 1094,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "dispute"
+      ],
+      "excerpt": "1.23 \" Regulatory Authority \" means, any Governmental Authority involved in granting approval of the investigation, manufacture, distribution, marketing, sale, pricing or reimbursement of a Product or in administering Regulatory Laws in that country or jurisdiction, including the FDA in the United States.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.24:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.24",
+      "heading_as_printed": "\" Regulatory Laws \" means all Applicable Laws governing the import, export, testing, design, investigation, manufacture,",
+      "start_line": 1099,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "records",
+        "compliance"
+      ],
+      "excerpt": "1.24 \" Regulatory Laws \" means all Applicable Laws governing the import, export, testing, design, investigation, manufacture, packaging, labeling, promotion, marketing or sale of a Product, or establishing recordkeeping and reporting obligations for product complaints or adverse events, or relating to recalls or other field actions or similar regulatory matters, in each case, with respect to the Products.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.25:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.25",
+      "heading_as_printed": "\"Services\" means the manufacturing and related services set forth in Exhibit A hereto (as amended by the Parties from",
+      "start_line": 1105,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "1.25 \"Services\" means the manufacturing and related services set forth in Exhibit A hereto (as amended by the Parties from time to time during the Term).",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.26:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.26",
+      "heading_as_printed": "\"Specifications\" means technical specifications agreed by the Parties for the manufacture and inspection of the Products,",
+      "start_line": 1110,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records"
+      ],
+      "excerpt": "1.26 \"Specifications\" means technical specifications agreed by the Parties for the manufacture and inspection of the Products, including without limitation the materials, reliability, dimensions, quality, AVL, designs, graphics, manufacturing specifications, engineering tolerances, handling, labeling, packaging, shipping and other production requirements, all as designated by Owlet in writing to Supplier prior to with the Purchase Orders placed by Owlet.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:1.32:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "1.32",
+      "heading_as_printed": "\"Trademarks\" means any and all trademarks, trade names, logos, designs, and trade dress owned or in-licensed by Owlet that are",
+      "start_line": 1141,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "1.32 \"Trademarks\" means any and all trademarks, trade names, logos, designs, and trade dress owned or in-licensed by Owlet that are used in connection with Products and placed on the Products or packaging (including inserts) associated with the Products by Supplier, including as set forth on Exhibit A hereto (as amended by the Parties from time to time during the term of this Agreement). Capitalized terms not defined in this Article I shall have the meanings specified elsewhere in the text of this Agreement. 4 ARTICLE II SUPPLY",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.1",
+      "heading_as_printed": "Forecasts . Owlet shall provide Supplier with access to forecasts of Owlet's expected purchases of the Products. The",
+      "start_line": 1182,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "2.1 Forecasts . Owlet shall provide Supplier with access to forecasts of Owlet's expected purchases of the Products. The forecasts will show anticipated monthly orders for a period of at least six (6) months. All forecasts shall be used for planning purposes only and shall not be binding on Supplier and Owlet. Supplier acknowledges that Owlet may order more or fewer Products than projected in such forecasts. The first forecast shall be provided approximately three (3) months before the delivery date set forth on the first purchase order submitted to Supplier pursuant to Section 2.2 of this Agr",
+      "references": [
+        "2.2"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.2",
+      "heading_as_printed": "Firm Orders . From time to time and at Owlet's discretion, Owlet will submit Purchase Orders for the Product to Supplier",
+      "start_line": 1189,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "2.2 Firm Orders . From time to time and at Owlet's discretion, Owlet will submit Purchase Orders for the Product to Supplier in written or electronic form. Each Purchase Order will specify the quantity of Products ordered, delivery dates and delivery and shipping instructions. If there is any conflict between the provisions of this Agreement and the Purchase Order or any acknowledgement or acceptance document of Supplier as to the obligations of the Parties regarding any Products ordered, the Parties agree that the resolution of such issue shall be controlled first by the terms of this Agreeme",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.3:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.3",
+      "heading_as_printed": "Samples . Supplier shall manufacture and deliver to Owlet pre-production samples for approval prior to the commencement",
+      "start_line": 1198,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "2.3 Samples . Supplier shall manufacture and deliver to Owlet pre-production samples for approval prior to the commencement of mass production. Supplier shall make any and all changes to the pre-production samples requested by Owlet, but to be not beyond the Specifications, if any, and shall ship new pre- production samples of the Products to Owlet for approval. The finished Products are not to differ in any respect from the pre-production samples approved by Owlet, and Owlet reserves the right at its sole discretion to reject any Products differing from the final pre-production samples withou",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.4:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.4",
+      "heading_as_printed": "Minimum Order Quantities . All orders of Products shall be subject to the minimum batch quantities set forth in Exhibit",
+      "start_line": 1205,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "2.4 Minimum Order Quantities . All orders of Products shall be subject to the minimum batch quantities set forth in Exhibit A to this Agreement. Notwithstanding any other provision to the contrary contained herein, Supplier acknowledges and agrees that Owlet has no specific requirement to purchase any amount of Products from Supplier during the Term hereof or to submit any specific number of Purchase Orders.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.6:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.6",
+      "heading_as_printed": "Raw Materials Procurement .",
+      "start_line": 1241,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "indemnity",
+        "incorporation"
+      ],
+      "excerpt": "2.6 Raw Materials Procurement . (a) Supplier shall order sufficient quantities of all raw materials required to manufacture the Products (\"Product Materials\") to enable Supplier to manufacture and deliver Products in accordance with Owlet's Purchase Orders. The costs of all such Product Materials shall be included in the purchase price for the Products set forth on Exhibit B . To the extent that Supplier purchases Product Materials for the purpose of manufacturing the Products in accordance with Owlet's Purchase Orders, Owlet shall reimburse Supplier in full for such Product Materials that (a)",
+      "references": [
+        "2.2"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.7:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.7",
+      "heading_as_printed": "Packaging . Supplier shall produce, inspect, label, package, store and ship all Products in a finished state in compliance with",
+      "start_line": 1321,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "compliance",
+        "incorporation"
+      ],
+      "excerpt": "2.7 Packaging . Supplier shall produce, inspect, label, package, store and ship all Products in a finished state in compliance with Applicable Laws and in accordance with the Specifications and any other reasonable instructions from Owlet as indicated on the applicable Purchase Order and standards defined by Owlet and agreed by the parties. Supplier shall make necessary arrangements and take reasonable precautions to protect the quality of the Products after its final inspection during storage, shipping and delivery of the Products, and Supplier agrees to package the Product suitably for expor",
+      "references": [
+        "2.6"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.9:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.9",
+      "heading_as_printed": "Title . Supplier shall bear responsibility for risk of loss or damage to the Products, and title shall not pass, until",
+      "start_line": 1494,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "indemnity"
+      ],
+      "excerpt": "2.9 Title . Supplier shall bear responsibility for risk of loss or damage to the Products, and title shall not pass, until Delivery, notwithstanding any other terms contained in this Agreement. 2.10 Inspection; Non-Conforming Products . All Products delivered under this Agreement shall be subject to inspection and applicable testing by Owlet notwithstanding prior receipt and payment. Any acceptance thereof shall not be construed as a waiver of its warranty and indemnification rights under this Agreement. If Owlet determines that any Products in a shipment are damaged, defective, or non-conform",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.11:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.11",
+      "heading_as_printed": "Dispute Regarding Non-Conforming Product . If Supplier does not agree that any such Product failed to meet the",
+      "start_line": 1517,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "2.11 Dispute Regarding Non-Conforming Product . If Supplier does not agree that any such Product failed to meet the Specifications and Supplier's validated manufacturing and analytical processes and Supplier and Owlet cannot reach agreement with respect to such Product, Supplier will submit the question of whether the Product failed to meet the Specifications to a mutually agreed upon and independent laboratory in the United States selected by Owlet and acceptable to Supplier (which acceptance shall not be unreasonably withheld) for determination. The findings of such laboratory shall be bindi",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:2.13:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "2.13",
+      "heading_as_printed": "Inability to Supply . In the event that Supplier becomes aware of or reasonably anticipates that it will be unable to",
+      "start_line": 1566,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "2.13 Inability to Supply . In the event that Supplier becomes aware of or reasonably anticipates that it will be unable to supply the quantities of the Products that Owlet has ordered pursuant to duly submitted Purchase Orders by the requested delivery date, either in whole or in part, Supplier shall inform Owlet in writing as soon as reasonably possible of such anticipated inability to supply. In case of Supplier's inability to meet any aforesaid Purchase Orders, Supplier shall fulfill such orders with such quantities of Products as can be reasonably made available for supply to Owlet hereund",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.1",
+      "heading_as_printed": "Manufacturing Processes . Supplier shall manufacture, package, label and store the Products at its manufacturing facility located",
+      "start_line": 1579,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "3.1 Manufacturing Processes . Supplier shall manufacture, package, label and store the Products at its manufacturing facility located at [5 Bldg, Honghui Industrial Park, 2nd Liuxian Road, Baoan District, Shenzhen, P.R.China, 518101 in accordance with the Specifications, industry standards, any and all Applicable Laws and quality standards agreed by the Parties. Supplier represents and warrants to Owlet that Supplier's manufacturing facility and processes (including equipment and machinery utilized in the manufacturing process) applicable to the Products comply with all Applicable Laws (includ",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.2",
+      "heading_as_printed": "Production Changes .",
+      "start_line": 1585,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "indemnity",
+        "incorporation"
+      ],
+      "excerpt": "3.2 Production Changes . (a) Owlet-Requested Changes . (i) Requests . At any time during the Term, Owlet has the right to request each of the following in writing: (1) a change to manufacturing and other Services, packaging and shipping specifications, and Products test procedures; (2) increases in production volume of Products for an outstanding build schedule; and/or (3) configuration or engineering changes to Products. 9 (ii) Responses . Within five (5) business days after receipt of such request, Supplier shall analyze it and (based on each category of changes set forth in clause (i) above",
+      "references": [
+        "3.2(b)"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.3:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.3",
+      "heading_as_printed": "Capacity . Supplier shall fulfill Owlet's requirements for the Products and shall maintain sufficient manufacturing",
+      "start_line": 1977,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "3.3 Capacity . Supplier shall fulfill Owlet's requirements for the Products and shall maintain sufficient manufacturing capacity (including appropriate manufacturing, storage and distribution facilities and qualified personnel) to meet Owlet's forecasted demand for the Products. At a minimum, Supplier shall maintain and have available a sufficient inventory to supply Owlet's requirements for a period of three (3) months based on Owlet's forecasts. Further, within six (6) months after the Effective Date, Supplier shall establish a disaster recovery plan that is reasonably satisfactory to Owlet,",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.5:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.5",
+      "heading_as_printed": "Record Retention . Supplier shall maintain throughout the Term (or for such longer period as may be required by",
+      "start_line": 1997,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "3.5 Record Retention . Supplier shall maintain throughout the Term (or for such longer period as may be required by Applicable Laws) accurate and complete records relating to its manufacture and testing of the Products, including all records required under Applicable Laws. Supplier will allow Owlet reasonable access to such records upon request. 3.6 Subcontracting . Without prior notice Supplier shall not subcontract any of its obligations under this Agreement to any subcontractors or other third parties. If approved by Owlet, Supplier shall comply with all Applicable Laws related to suppliers",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.8:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.8",
+      "heading_as_printed": "Waste . Supplier shall expressly be responsible for the treatment, storage, disposal and/or transportation of any waste products",
+      "start_line": 2251,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "3.8 Waste . Supplier shall expressly be responsible for the treatment, storage, disposal and/or transportation of any waste products or waste streams (hazardous, toxic or otherwise) that are related to, directly or indirectly, the manufacture of the Products pursuant to this Agreement. Any treatment, storage, disposal and/or transportation of any such waste products or waste streams will be in material compliance with all applicable environmental laws. 3.9 Supply Chain Security and Related Issues . (a) Security and Inspections . Supplier shall maintain tight security on Supplier's premises dur",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:3.10:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "3.10",
+      "heading_as_printed": "Survival . All warranties, covenants and commitments set forth in this Article 3 shall be deemed to be made and given by Supplier",
+      "start_line": 2356,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "3.10 Survival . All warranties, covenants and commitments set forth in this Article 3 shall be deemed to be made and given by Supplier on a continuing basis throughout the Term of this Agreement. ARTICLE IV PRICING AND PAYMENT",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:4.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "4.1",
+      "heading_as_printed": "Pricing . The prices at which Supplier will sell the Products to Owlet are set forth on the attached Exhibit B",
+      "start_line": 2367,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "4.1 Pricing . The prices at which Supplier will sell the Products to Owlet are set forth on the attached Exhibit B and shall be fixed for one year calculating from the first MP order for Supplier�s own materials based on 30 day leadtime except Owlet�s nominated suppliers for the Term of this Agreement. These prices are inclusive of all costs associated with the purchase of the Products. If the price of any component from an Owlet nominated supplier changes the full unit price will be adjusted in the cost of the finished good to the Supplier accordingly. The Purchase Order shall be fulfilled be",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:4.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "4.2",
+      "heading_as_printed": "Billing and Payment . Supplier shall submit invoices to Owlet for the amount due for the Products shipped to Owlet.",
+      "start_line": 2374,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "4.2 Billing and Payment . Supplier shall submit invoices to Owlet for the amount due for the Products shipped to Owlet. Owlet shall make payments to Supplier for the purchase price of Product within Thirty (30) days following delivery and acceptance thereof and receipt by Owlet of Supplier's invoice. Improper invoices may be returned without loss of discount. Owlet may withhold payment of any amount that it reasonably disputes in good faith until such dispute is resolved. All payments by Owlet shall be made in U.S. dollars.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:4.3:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "4.3",
+      "heading_as_printed": "Reschedules/Holds . In the event of reschedules by Owlet or Owlet's freight forwarder, or shipments placed on",
+      "start_line": 2380,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "4.3 Reschedules/Holds . In the event of reschedules by Owlet or Owlet's freight forwarder, or shipments placed on hold by Owlet or Owlet's freight forwarder (except for shipments placed on hold for quality reasons), in excess of thirty (30) days after the delivery date, Supplier shall invoice in full, unless Supplier has accepted such reschedule in writing.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:4.6:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "4.6",
+      "heading_as_printed": "Audit Rights . During the Term of this Agreement and for (2) two years thereafter, Owlet will have the right, on no less",
+      "start_line": 2421,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "records"
+      ],
+      "excerpt": "4.6 Audit Rights . During the Term of this Agreement and for (2) two years thereafter, Owlet will have the right, on no less than thirty (30) days' notice, to examine and audit the records of Supplier that are necessary and directly related to charges for Products shipped pursuant to this Agreement so that Owlet auditors may verify that charges are true and correct and do not contain substantial errors. Any such examinations or audits will be conducted upon reasonable notice and at reasonable times.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:4.7:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "4.7",
+      "heading_as_printed": "Currency Exchange Rate Management. Product BOM pricing will be negotiated in local currency and transferred to USD($)",
+      "start_line": 2427,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "4.7 Currency Exchange Rate Management. Product BOM pricing will be negotiated in local currency and transferred to USD($) at a negotiated exchange rate. If the actual exchange rate varies by an average of more than 3% from the negotiated rate over the trailing 45 days, the rate applied to new purchase orders will be adjusted to the average rate of the previous 90 days. 4.8 Cost Down Initiatives. Owlet seeks to work collaboratively with its manufacturers to improve manufacturing processes, efficiencies and find cost savings. If Owlet initiates a change that yields savings, these savings will be",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:5.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "5.1",
+      "heading_as_printed": "Corporate Authority; No Breach of Other Agreement . Each Party represents and warrants that it is a legal entity duly incorporated",
+      "start_line": 2453,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "5.1 Corporate Authority; No Breach of Other Agreement . Each Party represents and warrants that it is a legal entity duly incorporated or organized, validly existing and in good standing under the laws of its incorporation or organization and has all corporate power and authority to carry on its business as now conducted, to own, license or lease its assets and properties which it owns, licenses or leases, and to execute and deliver this Agreement and to perform its obligations hereunder. Each Party represents and warrants to the other that the execution of this Agreement and the full performa",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:5.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "5.2",
+      "heading_as_printed": "Product Warranties . Supplier warrants to Owlet that all Products supplied by Supplier under this Agreement (a) shall be in",
+      "start_line": 2461,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "compliance",
+        "indemnity",
+        "incorporation"
+      ],
+      "excerpt": "5.2 Product Warranties . Supplier warrants to Owlet that all Products supplied by Supplier under this Agreement (a) shall be in compliance with the Specifications and will be free from defects in materials, fabrication and workmanship; and (b) will be manufactured in accordance with Applicable Laws and the applicable quality requirements incorporated by reference into this Agreement. Supplier will convey to Owlet good and valid title to the Products, free from any lien, claim, security interest or encumbrance. In addition to these warranties, Supplier shall take all steps necessary to effect t",
+      "references": [
+        "5.2"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:5.3:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "5.3",
+      "heading_as_printed": "Remedies for Breach of Warranty . In the event of a breach of any of the warranties outlined in Section 5.2, Owlet shall give",
+      "start_line": 2493,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "indemnity"
+      ],
+      "excerpt": "5.3 Remedies for Breach of Warranty . In the event of a breach of any of the warranties outlined in Section 5.2, Owlet shall give Supplier notice of such breach. Upon receipt of such notice, Supplier shall promptly and without undue delay (a) repair, replace or modify the affected Product so as to correct the warranty breach to Owlet's satisfaction at no cost to Owlet, or, at Owlet's option, (b) refund the full price paid by Owlet for the affected Products, including shipping costs. Nothing herein, and no election of a remedy, will be construed as a waiver of Owlet's indemnification rights und",
+      "references": [
+        "5.2"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:5.4:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "5.4",
+      "heading_as_printed": "Additional Supplier Representations and Warranties . Supplier further represents, warrants, and covenants that:",
+      "start_line": 2499,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "5.4 Additional Supplier Representations and Warranties . Supplier further represents, warrants, and covenants that: (a) it (1) has sufficient expertise and know-how in its industry to manufacture Products in accordance with Specifications, (2) will dedicate sufficient resources, materials and personnel to perform its obligations hereunder, (3) will deliver the quantities ordered by Owlet in accordance with Owlet's requirements, and (4) will pay all Subcontractors in a timely manner; (b) it has reviewed its supply chain security procedures and that these procedures and their implementation are,",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:5.6:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "5.6",
+      "heading_as_printed": "Survival . The representations, warranties and covenants set forth in this Article V shall survive the termination or",
+      "start_line": 2723,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "5.6 Survival . The representations, warranties and covenants set forth in this Article V shall survive the termination or expiration of this Agreement. ARTICLE VI INTELLECTUAL PROPERTY MATTERS",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:6.8:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "6.8",
+      "heading_as_printed": "Promotion Limitation . Supplier covenants that it shall not use the \"Owlet\" name or any Owlet Trademarks, products or trade",
+      "start_line": 2848,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "6.8 Promotion Limitation . Supplier covenants that it shall not use the \"Owlet\" name or any Owlet Trademarks, products or trade names in any advertising or promotion by Supplier (whether by including reference to Owlet in any list of customers, advertising that its services and products are used by Owlet, denying or confirming the foregoing or for any other purposes) without advance written permission and subject to final approval from Owlet. 6.9 Black and Grey Market Products . (a) Cooperation . The Parties acknowledge the importance of preventing Black Market Products and Grey Market Product",
+      "references": [
+        "6.12"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:6.12:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "6.12",
+      "heading_as_printed": "Supplier Representative . Supplier shall provide a Supplier Representative. The Supplier Representative must be able to",
+      "start_line": 2946,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "6.12 Supplier Representative . Supplier shall provide a Supplier Representative. The Supplier Representative must be able to speak, read, and write English and the local language (if not English) fluently and will serve as the primary contact between Owlet and Supplier. The Supplier Representative is to be technically competent and possess sufficient expertise to manage the manufacture of Products in accordance with the Specifications. The Supplier Representative is responsible for taking the necessary steps to ensure that Supplier supplies Owlet with Products that meet Owlet's Specifications ",
+      "references": [
+        "6.11"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:6.14:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "6.14",
+      "heading_as_printed": "Liquidated Damages . In the event Any Party breeches its obligations with right to the Licensed IP under Sections",
+      "start_line": 3012,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "6.14 Liquidated Damages . In the event Any Party breeches its obligations with right to the Licensed IP under Sections 6.1, 6.2, 6.5, 6.7, 6.8, 6.9 or 6.11 of this Agreement, it shall pay the other Party the sum of Four Hundred Thousand U.S. Dollars (USD $400,000) as liquidated damages. Any Party acknowledges that these liquidated damages set forth in this Section 6.12 are reasonable under the circumstances existing on the Effective Date and reasonably approximate the amount of damages that would be sustained including legal and other expenses that would need to be incurred, by the other Party",
+      "references": [
+        "6.12"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:6.12:2",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "6.12",
+      "heading_as_printed": "shall prevent observant party from pursuing any claim in law or equity against Breaching party to observant party from pursuing any claim in law or equity against Breaching party to remedy a breach of observant party�s rights in the Licensed IP.",
+      "start_line": 3016,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "6.12 shall prevent observant party from pursuing any claim in law or equity against Breaching party to observant party from pursuing any claim in law or equity against Breaching party to remedy a breach of observant party�s rights in the Licensed IP. 21 ARTICLE VII COMPLIANCE AND QUALITY CONTROL",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:7.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "7.1",
+      "heading_as_printed": "Compliance with Laws. Supplier will comply with all Applicable Laws that pertain to its activities under this Agreement and,",
+      "start_line": 3053,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "7.1 Compliance with Laws. Supplier will comply with all Applicable Laws that pertain to its activities under this Agreement and, except as otherwise provided herein, will bear the entire cost and expense of such compliance. In addition, Supplier covenants that it will comply with the U.S. Foreign Corrupt Practice Act (the \"FCPA\"), which prohibits offering, promising or paying any money, gift or any other thing of value to any person for the purpose of influencing official governmental actions or decisions in obtaining or retaining business relating to Products or Supplier's other obligations h",
+      "references": [
+        "10.2(d)"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:7.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "7.2",
+      "heading_as_printed": "Permits and Approvals . At all times during the Term of this Agreement, Supplier shall obtain and maintain (at Supplier's",
+      "start_line": 3062,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "customs"
+      ],
+      "excerpt": "7.2 Permits and Approvals . At all times during the Term of this Agreement, Supplier shall obtain and maintain (at Supplier's expense) all permits, certifications and licenses required by Applicable Law (including, without limitation, ISO certification, FDA registration and all other U.S. or international permits and approvals required) for the performance of Supplier's duties and obligations under this Agreement. Supplier shall notify Owlet as soon as practicable after receiving notice of any claim or action by the FDA or other Governmental Authority with respect to its permits, certification",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:7.3:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "7.3",
+      "heading_as_printed": "Quality Standards . Supplier agrees to comply at all times with Owlet's quality requirements as set forth in the Supplier",
+      "start_line": 3069,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "7.3 Quality Standards . Supplier agrees to comply at all times with Owlet's quality requirements as set forth in the Supplier Quality Agreement attached hereto as Exhibit C (the \"SQA\") and as otherwise agreed by the Parties, which quality requirements are hereby incorporated by reference into this Agreement. Supplier further agrees that Owlet may update its quality requirements and form of Supplier Quality Agreement from time to time and that, as a material condition of Supplier's right to continue as an approved Supplier, Owlet may require Supplier to sign its then current form of Supplier Qu",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:7.4:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "7.4",
+      "heading_as_printed": "Manufacturing Audits . Owlet shall have the right, at its expense, upon reasonable advance notice and at reasonable",
+      "start_line": 3076,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "records",
+        "compliance"
+      ],
+      "excerpt": "7.4 Manufacturing Audits . Owlet shall have the right, at its expense, upon reasonable advance notice and at reasonable times, to inspect and audit Supplier's facilities involved in manufacturing the Product and other operations for the purpose of and to the extent necessary for verifying Supplier's compliance with its obligations hereunder and Owlet quality system requirements, including the right to (a) inspect the Products, (b) observe manufacturing and related operations, processes and methods with respect to the Products, (c) review documentation, and (d) conduct quality assurance, qualit",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:7.6:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "7.6",
+      "heading_as_printed": "Recordkeeping . Without limiting the generality of Section 7.1, Supplier agrees to create and maintain, at its own",
+      "start_line": 3112,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "records",
+        "compliance",
+        "incorporation"
+      ],
+      "excerpt": "7.6 Recordkeeping . Without limiting the generality of Section 7.1, Supplier agrees to create and maintain, at its own expense, all records necessary to comply with Applicable Law that relates to Supplier's performance under this Agreement and sufficient to demonstrate Supplier's compliance with its obligations under this Agreement. ARTICLE VIII CONFIDENTIALITY The confidentiality terms set forth in the Confidentiality Agreement (or similar contract) between the parties attached to this Agreement as Exhibit D are hereby incorporated by reference into this Agreement and shall apply and extend t",
+      "references": [
+        "7.1"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:9.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "9.1",
+      "heading_as_printed": "Indemnification . Supplier shall indemnify and hold harmless Owlet, its affiliates, distributors and sales agents, and",
+      "start_line": 3135,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity",
+        "incorporation"
+      ],
+      "excerpt": "9.1 Indemnification . Supplier shall indemnify and hold harmless Owlet, its affiliates, distributors and sales agents, and their respective directors, officers and employees from and against any and all claims, demands, suits, liabilities, losses, damages, penalties, fines, costs and expenses (including attorneys' fees and litigation expenses) paid or incurred by them which arise from or are related to: (a) any bodily injury, death or property damage resulting from any actual or proved defect in the materials, fabrication or workmanship of the Products or from the failure of the Products to co",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:9.2:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "9.2",
+      "heading_as_printed": "NO CONSEQUENTIAL DAMAGES . NOTWITHSTANDING ANY OTHER TERM OF THIS AGREEMENT, EXCEPT AS SET FORTH IN THIS SECTION 9.3, IN NO",
+      "start_line": 3144,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "indemnity"
+      ],
+      "excerpt": "9.2 NO CONSEQUENTIAL DAMAGES . NOTWITHSTANDING ANY OTHER TERM OF THIS AGREEMENT, EXCEPT AS SET FORTH IN THIS SECTION 9.3, IN NO EVENT SHALL EITHER PARTY OR ITS AFFILIATES BE LIABLE TO THE OTHER OR ITS AFFILIATES FOR INDIRECT, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES OR ANY LOST PROFITS OR LOST OPPORTUNITIES, DIRECTLY OR INDIRECTLY ARISING FROM THE PERFORMANCE, FAILURE TO PERFORM OR BREACH OF THIS AGREEMENT, REGARDLESS OF ANY NOTICE OF THE POSSIBILITY OF SUCH DAMAGES. 23 NOTWITHSTANDING ANY OTHER TERM OF THIS AGREEMENT TO THE CONTRARY, NO PROVISION OF THIS AGREEMENT SHALL LIMIT ",
+      "references": [
+        "9.3"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:10.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "10.1",
+      "heading_as_printed": "Term . The term of this Agreement shall be for one (1) year commencing on the Effective Date (the \"Term\"). Thereafter, the",
+      "start_line": 3186,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance",
+        "indemnity"
+      ],
+      "excerpt": "10.1 Term . The term of this Agreement shall be for one (1) year commencing on the Effective Date (the \"Term\"). Thereafter, the Term of this Agreement may be extended at Owlet's option upon ninety (90) days' written notice to Supplier. This Agreement may be terminated before expiration only by agreement of the Parties or in accordance with Section 10.2. 10.2 Termination . This Agreement may be terminated as follows: (a) By either Party upon written notice to the other Party in the event the other Party files for bankruptcy, liquidation, dissolution, or takes similar action seeking protection a",
+      "references": [
+        "10.2"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:10.4:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "10.4",
+      "heading_as_printed": "Effect of Termination on Rights . The termination or expiration of this Agreement shall not relieve either Party of any",
+      "start_line": 3301,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "indemnity"
+      ],
+      "excerpt": "10.4 Effect of Termination on Rights . The termination or expiration of this Agreement shall not relieve either Party of any accrued obligations (including indemnification and confidentiality obligations) that are intended to survive or to be performed after, the termination or expiration of this Agreement. The termination or expiration of this Agreement shall be wit h out prejudice to any rights that shall have accrued to the benefit of any Party prior to such termination or expiration. (a) IP Use . Upon expiration or termination of this Agreement for any reason, any party shall immediately c",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.1:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.1",
+      "heading_as_printed": "Interpretive Conventions . Whenever the words \"include,\" \"includes\" or \"including\" are used in this Agreement, they shall be",
+      "start_line": 3341,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "incorporation"
+      ],
+      "excerpt": "11.1 Interpretive Conventions . Whenever the words \"include,\" \"includes\" or \"including\" are used in this Agreement, they shall be understood to be followed by the words \"without limitation.\" Pronouns, including \"he,\" \"she\" and \"it,\" when used in reference to any person, shall be deemed applicable to entities or individuals, male or female, as appropriate in any given case. Standard variations on defined terms (such as the plural form of a term defined in the singular form, and the past tense of a term defined in the present tense) shall be deemed to have meanings that correlate to the meanings",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.7:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.7",
+      "heading_as_printed": "Severability . If any provision of this Agreement or the application thereof to any party or circumstances shall be declared",
+      "start_line": 3405,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "11.7 Severability . If any provision of this Agreement or the application thereof to any party or circumstances shall be declared void, illegal or unenforceable, the remainder of this Agreement shall be valid and enforceable to the extent permitted by Applicable Laws. In such event, the parties shall use their best efforts to replace the invalid or unenforceable provision with a provision that, to the extent permitted by the Applicable Laws, achieves the purposes intended under the invalid or unenforceable provision. Any deviation by any party from the terms and provisions of this Agreement in",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.10:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.10",
+      "heading_as_printed": "Notice . Notice Means one party notifying the other that they are in breach of the contract or they intend to end the",
+      "start_line": 3425,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery"
+      ],
+      "excerpt": "11.10 Notice . Notice Means one party notifying the other that they are in breach of the contract or they intend to end the contract. Any notice provided for under this Agreement shall be in writing, shall be deemed to have been sufficiently provided and effectively made as of the delivery date if hand-delivered, or as of the date received if mailed by registered or certified mail, postage prepaid, facsimile or by overnight courier, and addressed to the receiving party at its respective address as follows: 26 If to Owlet: Owlet Baby Care Inc. 2500 Executive Pkwy, Suite 300 Lehi, UT 84043 Fax N",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.13:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.13",
+      "heading_as_printed": "Ethical Business Practices . In no event will Owlet be obligated under this Agreement to take any action or omit to take any",
+      "start_line": 3561,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "11.13 Ethical Business Practices . In no event will Owlet be obligated under this Agreement to take any action or omit to take any action that it believes in good faith would cause it to be in violation of any laws, including without limitation the US Foreign Corrupt Practices Act. Supplier shall provide Owlet and Owlet�s Affiliates with such assurances and certifications regarding Supplier�s activities as Owlet may reasonably request with respect to Supplier�s compliance with Section1.2. Supplier understands that U.S. law (a) generally prohibits payments by Owlet or Owlet�s Affiliates or any ",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.14:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.14",
+      "heading_as_printed": "Export Controls . Without in any way limiting the provisions of this Agreement, no products, items, commodities, or technical",
+      "start_line": 3570,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "compliance"
+      ],
+      "excerpt": "11.14 Export Controls . Without in any way limiting the provisions of this Agreement, no products, items, commodities, or technical data or information obtained from the other Party nor any direct product of such technical data or information is intended to or shall be exported or re-exported, directly or indirectly, to any destination restricted or prohibited by applicable law without necessary authorization by governmental authorities, including (without limitation) the US Bureau of Industry and Security.",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.15:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.15",
+      "heading_as_printed": "Governing Law . This Agreement shall be governed by and construed in accordance with the laws of the State of New York without",
+      "start_line": 3576,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "dispute"
+      ],
+      "excerpt": "11.15 Governing Law . This Agreement shall be governed by and construed in accordance with the laws of the State of New York without regard to principles of conflicts of laws. 27",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.16:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.16",
+      "heading_as_printed": "Dispute Resolution . The parties will resolve any claims or disputes by the sequential methods outlined in this section.",
+      "start_line": 3604,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "indemnity",
+        "dispute"
+      ],
+      "excerpt": "11.16 Dispute Resolution . The parties will resolve any claims or disputes by the sequential methods outlined in this section. (a) Direct Negotiation . The parties will attempt in good faith to resolve any claims or disputes arising out of or relating to this Agreement (\"Dispute\") promptly by direct negotiations within sixty (60) days after a Party's written request for a meeting. (b) Arbitration . If the parties cannot resolve a dispute after direct negotiation outlined in Section 11.14(a) within sixty (60) days after a party's written request for a meeting, the other party may submit the Dis",
+      "references": [
+        "11.14(a)",
+        "11.16"
+      ],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    },
+    {
+      "id": "OWLET-AONI-2018:11.18:1",
+      "document_id": "OWLET-AONI-2018",
+      "section_as_printed": "11.18",
+      "heading_as_printed": "Counterparts; Electronic of Facsimile Transmission . This Agreement may be executed in counterparts, each of which shall be",
+      "start_line": 3695,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "labels": [
+        "delivery",
+        "records",
+        "compliance",
+        "incorporation"
+      ],
+      "excerpt": "11.18 Counterparts; Electronic of Facsimile Transmission . This Agreement may be executed in counterparts, each of which shall be deemed to be an original and all of which together shall be deemed to be one and the same instrument. This Agreement may be delivered by one or both parties by facsimile or electronic transmission with the same effect as if delivered personally. [Signatures appear on the following page] 29 IN WITNESS WHEREOF , the duly authorized representatives of the parties hereto have caused this Manufacturing and Supply Agreement to be executed as of the Effective Date. OWLET B",
+      "references": [],
+      "review_status": "machine_candidate_unreviewed",
+      "confidence": null,
+      "notes": "Verify against source exhibit and remove TOC duplicates; neither finding nor legal conclusion.",
+      "source_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b"
+    }
+  ],
+  "unresolved": [
+    "Source completeness must be verified",
+    "Headings or table-of-contents entries may be misclassified",
+    "Human review required before publishing clause findings",
+    "Source SHA-256 proves byte identity, not SEC authenticity or completeness"
+  ]
+}

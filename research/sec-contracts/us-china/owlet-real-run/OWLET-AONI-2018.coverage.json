@@ -1,0 +1,23 @@
+{
+  "document_id": "OWLET-AONI-2018",
+  "sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b",
+  "source_bytes": 322370,
+  "expected_section_locations": 8,
+  "found_location_count": 4,
+  "found": [
+    "3.5",
+    "9.2",
+    "11.15",
+    "11.16"
+  ],
+  "not_found": [
+    "2.8",
+    "3.6",
+    "3.9",
+    "9.3"
+  ],
+  "extracted_candidate_count": 54,
+  "metric_note": "Section-location recall against a small, manually selected reference list. Not clause precision, legal correctness, or full-document recall.",
+  "source_completeness": "not independently verified",
+  "human_review_status": "not reviewed"
+}

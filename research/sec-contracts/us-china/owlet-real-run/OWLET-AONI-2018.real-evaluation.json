@@ -1,0 +1,139 @@
+{
+  "record_id": "OWLET-AONI-2018-REAL-EXTRACTION-001",
+  "input_file": "nt10020073x5_ex10-11.htm",
+  "saved_file_sha256": "ff8234b44f5c3979dcb94ab5674f6ebb9704cacd3d1bbfbd38ef3cb4d3bd236b",
+  "saved_file_bytes": 322370,
+  "acquisition": "user_saved_browser_html",
+  "original_sec_byte_identity": "unverified",
+  "baseline_extractor": "sec-extraction v0.8 through owlet-pipeline v1.1",
+  "baseline_candidate_count": 54,
+  "baseline_expected_locations": 8,
+  "baseline_locations_found": 4,
+  "baseline_locations_missed": [
+    "2.8",
+    "3.6",
+    "3.9",
+    "9.3"
+  ],
+  "baseline_location_recall": 0.5,
+  "note": "Baseline expected section 9.3 was based on the TOC, but operative damages section is 9.2. Metrics are not legal accuracy or complete recall.",
+  "human_review_status": "not formally reviewed",
+  "source_locations_for_review": [
+    {
+      "section_as_printed": "2.8",
+      "topic": "Delivery / FOB Shenzhen",
+      "category": "delivery",
+      "source_byte_offset_estimate": 84493,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "3.5",
+      "topic": "Manufacturing record retention",
+      "category": "records",
+      "source_byte_offset_estimate": 121106,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "3.6",
+      "topic": "Subcontractor responsibility",
+      "category": "subcontracting",
+      "source_byte_offset_estimate": 121845,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "3.9",
+      "topic": "Supply chain security",
+      "category": "security",
+      "source_byte_offset_estimate": 135814,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "7.3",
+      "topic": "Quality agreement incorporation",
+      "category": "incorporation",
+      "source_byte_offset_estimate": 192235,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "7.6",
+      "topic": "Compliance recordkeeping",
+      "category": "records",
+      "source_byte_offset_estimate": 196035,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "9.1",
+      "topic": "Supplier indemnification",
+      "category": "indemnity",
+      "source_byte_offset_estimate": 197809,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "9.2",
+      "topic": "Consequential damages limitation",
+      "category": "liability",
+      "source_byte_offset_estimate": 199258,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "11.15",
+      "topic": "New York governing law",
+      "category": "law",
+      "source_byte_offset_estimate": 227795,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    },
+    {
+      "section_as_printed": "11.16",
+      "topic": "ICDR arbitration after negotiation",
+      "category": "arbitration",
+      "source_byte_offset_estimate": 229114,
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1816708/000114036121010908/nt10020073x5_ex10-11.htm",
+      "status": "source_location_identified_not_independently_reviewed",
+      "notes": "Location anchored in user-saved SEC exhibit; verify in reviewer workflow. Byte offset approximate for decoded saved HTML."
+    }
+  ],
+  "issues": [
+    {
+      "id": "TOC-IND-01",
+      "description": "Table of contents labels indemnification 9.2 and no consequential damages 9.3; operative body labels them 9.1 and 9.2.",
+      "severity": "reference_conflict",
+      "action": "Preserve both; operative-body and TOC sections must be compared."
+    },
+    {
+      "id": "ARB-REF-01",
+      "description": "Section 11.16(b) points to direct negotiation in 11.14(a) although direct negotiation is printed as 11.16(a).",
+      "severity": "reference_conflict",
+      "action": "Flag; do not silently repair."
+    },
+    {
+      "id": "EXH-REF-01",
+      "description": "Article VIII refers to a confidentiality agreement as Exhibit D; the uploaded exhibit contains A, B, and C, but no standalone Exhibit D section.",
+      "severity": "missing_incorporated_material",
+      "action": "Locate separate Exhibit D or record as not present in supplied file."
+    },
+    {
+      "id": "SAVE-WRAPPER-01",
+      "description": "Saved HTML includes browser-generated scripts/wrapper; checksum is of uploaded saved file, not original SEC response bytes.",
+      "severity": "provenance_limit",
+      "action": "Acquire byte-identical official response separately before asserting original-source hash."
+    }
+  ]
+}
