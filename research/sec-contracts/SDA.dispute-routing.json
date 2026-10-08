@@ -1,0 +1,16 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm",
+  "sections": {
+    "7.1": "Transition Committee initial notice and 30-day review",
+    "7.2": "Senior-officer negotiation, 30 days",
+    "7.3": "CEO negotiation, 30 days",
+    "7.4": "CPR mediation; specific qualifying disputes may proceed to litigation",
+    "7.5": "Specified categories sent to confidential binding arbitration under Schedule 7.5",
+    "10.2": "Delaware law and designated Delaware courts for permitted litigation"
+  },
+  "limitations": [
+    "Schedule 7.4 and Schedule 7.5 contents must be checked for completeness before applying any precise routing to a hypothetical dispute",
+    "No claim made that ordinary customs disagreement is automatically arbitrable",
+    "No conclusion on CISG applicability"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "version": "0.3.0-research",
+  "status": "targeted_comparison_not_full_audit",
+  "records": [
+    {
+      "topic": "Roles",
+      "sec004": {
+        "section": "Preamble",
+        "finding": "3M supplier; Solventum purchaser",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "Preamble",
+        "finding": "Solventum supplier; 3M purchaser",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed"
+    },
+    {
+      "topic": "Cross-border shipping",
+      "sec004": {
+        "section": "\u00a77.2",
+        "finding": "FCA port of export, Incoterms 2020",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "\u00a77.2",
+        "finding": "FCA port of export, Incoterms 2020",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed"
+    },
+    {
+      "topic": "IOR and customs",
+      "sec004": {
+        "section": "\u00a716.1(a)",
+        "finding": "Purchaser duties contingent on acting as IOR; supplier customs-clearance disclaimer",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "\u00a716.1(a)",
+        "finding": "Same structural allocation to purchaser (now 3M)",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed"
+    },
+    {
+      "topic": "Export and trade control",
+      "sec004": {
+        "section": "\u00a716.1(b)\u2013(h)",
+        "finding": "Purchaser-related trade compliance representations and restrictions",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "\u00a716.1(b)\u2013(h)",
+        "finding": "Purchaser-related trade compliance representations and restrictions",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "preliminary"
+    },
+    {
+      "topic": "Noncompliance and indemnity",
+      "sec004": {
+        "section": "\u00a716.1(i)",
+        "finding": "Termination/cooperation/indemnity linked to trade-compliance breach",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "\u00a716.1(i)",
+        "finding": "Same category of remedies; compare precise scope before treating identical",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "preliminary"
+    },
+    {
+      "topic": "Dispute routing",
+      "sec004": {
+        "section": "\u00a713.1; \u00a718.7",
+        "finding": "References SDA Article VII and \u00a710.2",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "\u00a713.1; \u00a718.7",
+        "finding": "References SDA Article VII and \u00a710.2",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed"
+    },
+    {
+      "topic": "Applicable law",
+      "sec004": {
+        "section": "SDA \u00a710.2(a)",
+        "finding": "Delaware law through incorporation",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "SDA \u00a710.2(a)",
+        "finding": "Delaware law through incorporation",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed"
+    },
+    {
+      "topic": "Ultimate private forum",
+      "sec004": {
+        "section": "SDA \u00a7\u00a77.4\u20137.5",
+        "finding": "Mediation, then conditional court/arbitration routing; schedules may affect category",
+        "source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+      },
+      "sec008": {
+        "section": "SDA \u00a7\u00a77.4\u20137.5",
+        "finding": "Mediation, then conditional court/arbitration routing; schedules may affect category",
+        "source": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm"
+      },
+      "status": "confirmed_with_limitations"
+    }
+  ],
+  "SDA": {
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm",
+    "sections": {
+      "7.1": "Transition Committee initial notice and 30-day review",
+      "7.2": "Senior-officer negotiation, 30 days",
+      "7.3": "CEO negotiation, 30 days",
+      "7.4": "CPR mediation; specific qualifying disputes may proceed to litigation",
+      "7.5": "Specified categories sent to confidential binding arbitration under Schedule 7.5",
+      "10.2": "Delaware law and designated Delaware courts for permitted litigation"
+    },
+    "limitations": [
+      "Schedule 7.4 and Schedule 7.5 contents must be checked for completeness before applying any precise routing to a hypothetical dispute",
+      "No claim made that ordinary customs disagreement is automatically arbitrable",
+      "No conclusion on CISG applicability"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "SEC-004",
+  "title": "Master Supply Agreement",
+  "agreement_date": "2024-03-31",
+  "parties": {
+    "supplier": "3M Company",
+    "purchaser": "Solventum Corporation"
+  },
+  "primary_source": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm",
+  "source_document": "SEC Exhibit 10.10",
+  "review_status": "initial_clause_mapping",
+  "review_scope": "Targeted review of sections material to the Tradeopedia model; not a full legal opinion or complete contract audit",
+  "related_documents": [
+    {
+      "name": "Separation and Distribution Agreement",
+      "reason": "Articles VII and 10.2 incorporated by reference",
+      "status": "not_yet_reviewed"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SEC-004-01",
+      "category": "role",
+      "label": "Parties and supply roles",
+      "section": "Preamble",
+      "finding": "3M is Supplier and Solventum is Purchaser.",
+      "status": "verified_source",
+      "limitation": "Contractual roles do not establish the actual importer of record.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-02",
+      "category": "shipping",
+      "label": "Cross-border delivery terms",
+      "section": "7.2",
+      "finding": "Cross-border shipments use FCA port of export (Incoterms 2020), unless otherwise agreed.",
+      "status": "verified_source",
+      "limitation": "Delivery risk allocation is not identical to statutory customs liability.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-03",
+      "category": "price",
+      "label": "Price adjustment",
+      "section": "6.1–6.2",
+      "finding": "Taxes and additional amounts are invoiced to Purchaser; price changes include defined production cost drivers.",
+      "status": "verified_source",
+      "limitation": "No general automatic tariff pass-through conclusion is drawn.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-04",
+      "category": "records",
+      "label": "Commercial shipping documents",
+      "section": "6.4",
+      "finding": "Invoices and related shipping documents must identify orders, items, quantities, prices, and purchaser identifier when provided.",
+      "status": "verified_source",
+      "limitation": "Not equivalent to full customs recordkeeping cooperation.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-05",
+      "category": "inspection",
+      "label": "Inspection rights",
+      "section": "7.5",
+      "finding": "Purchaser may inspect products and manufacturing facilities subject to notice and cost terms.",
+      "status": "verified_source",
+      "limitation": "Not necessarily a customs audit right.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-06",
+      "category": "indemnity_supplier",
+      "label": "Supplier indemnity",
+      "section": "10.3",
+      "finding": "Supplier indemnifies Purchaser for specified damages connected with Supplier breach, subject to exceptions.",
+      "status": "verified_source",
+      "limitation": "Read alongside Article 11 and referenced Separation and Distribution Agreement.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-07",
+      "category": "indemnity_purchaser",
+      "label": "Purchaser indemnity",
+      "section": "10.2",
+      "finding": "Purchaser has broad third-party claim indemnity obligations with specified exceptions.",
+      "status": "verified_source",
+      "limitation": "Applicability to a particular government claim needs legal analysis.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-08",
+      "category": "liability",
+      "label": "Limitations and notice",
+      "section": "11.1–11.3",
+      "finding": "Certain damages are excluded; supplier liability is generally capped using annual product price, with carve-outs and an additional cross-agreement cap.",
+      "status": "verified_source",
+      "limitation": "Section 11.2(b) also has a short notice period; enforceability and exceptions not determined.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-09",
+      "category": "trade",
+      "label": "IOR and customs allocation",
+      "section": "16.1(a)",
+      "finding": "Purchaser must comply with customs requirements if it acts as IOR; Supplier disclaims stated clearance-delay and inaccurate-declaration costs and penalties.",
+      "status": "verified_source",
+      "limitation": "Does not establish Solventum actually acted as IOR in any shipment or override CBP duties.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-10",
+      "category": "export",
+      "label": "Export and restricted-party controls",
+      "section": "16.1(b)–(h)",
+      "finding": "Purchaser undertakes specified licensing, destination, end-user, sanctions and antiboycott obligations.",
+      "status": "verified_source",
+      "limitation": "Requires transaction- and time-specific legal review.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-11",
+      "category": "noncompliance",
+      "label": "Trade compliance remedies",
+      "section": "16.1(i)",
+      "finding": "Materiality, potential immediate termination, investigation cooperation, and indemnification follow certain trade-compliance breaches.",
+      "status": "verified_source",
+      "limitation": "Scope and interaction with caps require further legal analysis.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-12",
+      "category": "disputes",
+      "label": "Dispute-resolution incorporation",
+      "section": "13.1; 18.7",
+      "finding": "Dispute escalation and resolution are incorporated from the Separation and Distribution Agreement; governing law and jurisdiction are also incorporated.",
+      "status": "dependency_unresolved",
+      "limitation": "Do not classify as arbitration or litigation until incorporated SDA provisions are examined.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-13",
+      "category": "cisg",
+      "label": "CISG applicability",
+      "section": "Not resolved",
+      "finding": "No conclusion is reached about CISG exclusion or application.",
+      "status": "not_determined",
+      "limitation": "Examine incorporated choice-of-law clause and transaction facts first.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-14",
+      "category": "origin",
+      "label": "Country-of-origin warranty",
+      "section": "Not determined",
+      "finding": "No validated finding yet on a standalone country-of-origin warranty.",
+      "status": "not_determined",
+      "limitation": "Do not equate not determined with absent.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    },
+    {
+      "id": "SEC-004-15",
+      "category": "tariff",
+      "label": "Tariff-specific adjustment",
+      "section": "Not determined",
+      "finding": "No validated finding yet on a tariff-specific change-in-law or duty adjustment mechanism.",
+      "status": "not_determined",
+      "limitation": "Review incorporated documents and full pricing structure.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm"
+    }
+  ]
+}
