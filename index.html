@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Tradeopedia Framework: transaction-centered research on US trade law, customs compliance, contracts, and arbitration."><title>Overview | Tradeopedia Framework</title><style>
+:root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#182a3a;background:#f8fafc}*{box-sizing:border-box}body{margin:0}a{color:#145d88;text-decoration:none}a:hover{text-decoration:underline}.shell{display:grid;grid-template-columns:264px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#eef3f6;border-right:1px solid #dbe3e9;padding:30px 24px}.wordmark{letter-spacing:.12em;font-size:13px;font-weight:800;color:#203449}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#62798b;margin:14px 0}.sidebar nav a{display:block;padding:11px 12px;margin:4px 0;border-radius:7px;font-size:14px;color:#445769}.sidebar nav a.active,.sidebar nav a:hover{background:#dbe8f0;color:#163d5f;text-decoration:none}.side-footer{border-top:1px solid #d4e0e8;margin-top:30px;padding-top:18px;font-size:12px;line-height:1.7;color:#678}.content{min-width:0;padding:48px clamp(22px,5vw,90px) 90px}.article{max-width:1020px;margin:auto}.topline{font-size:12px;color:#5e7588;text-transform:uppercase;letter-spacing:.13em;border-bottom:1px solid #d9e2e8;padding-bottom:22px}.article h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(38px,5vw,62px);line-height:1.08;letter-spacing:-.025em;margin:38px 0 24px;color:#142b3f}.article h2{font-size:25px;font-weight:650;letter-spacing:-.02em;margin:52px 0 18px;border-top:1px solid #d8e1e7;padding-top:28px}.article h3{margin:28px 0 12px;font-size:19px}.article p,.article li{font-size:15.5px;line-height:1.85;color:#34485a}.article strong{color:#142f45}.article ul,.article ol{padding-left:25px}.article li{padding-left:3px;margin:5px 0}.article blockquote{border-left:3px solid #668eaa;background:#edf3f7;padding:13px 24px;margin:26px 0}.article blockquote p{margin:0;font-size:14px}.article table{border-collapse:collapse;display:block;overflow:auto;width:100%;font-size:13px}.article th{text-align:left;background:#eaf0f5;color:#213d52}.article th,.article td{border-bottom:1px solid #dce4ea;padding:12px 14px;min-width:120px;vertical-align:top}.article td{line-height:1.6}.article pre{background:#182838;color:#e9f1f7;border-radius:8px;overflow:auto;padding:24px;font-size:13px;line-height:1.65}.article :not(pre)>code{background:#e8edf2;padding:2px 5px;border-radius:4px;font-size:.91em}.diagram-wrap{background:#fff;border:1px solid #dce4eb;border-radius:10px;padding:20px;margin:26px 0;overflow-x:auto}.mermaid{display:flex;justify-content:center;min-width:650px}.article hr{border:0;border-top:1px solid #dbe3e9;margin:35px 0}.status{font-size:12px;border:1px solid #c7d5de;border-radius:40px;padding:5px 10px;color:#476476;margin-left:10px;display:inline-block}.mini-nav{display:flex;gap:20px;flex-wrap:wrap;margin:22px 0 0}.mini-nav a{font-size:13px;font-weight:600}.foot{font-size:12px;color:#728796;margin:65px 0 0;padding-top:25px;border-top:1px solid #dce4e9}@media(max-width:850px){.shell{display:block}.sidebar{position:static;height:auto;padding:18px 22px}.sidebar nav{display:flex;flex-wrap:wrap}.sidebar nav a{padding:8px}.side-footer{display:none}.content{padding:28px 20px 60px}.article h1{font-size:37px}.mermaid{min-width:550px}}</style></head><body><div class="shell"><aside class="sidebar"><div class="wordmark">TRADEOPEDIA</div><div class="eyebrow">Framework / Working papers</div><nav aria-label="Main navigation"><a class="active" href="/">Overview</a><a class="" href="/framework.html">Technical specification</a><a href="https://github.com/Catrina-max/tradeopedia-framework">Source on GitHub ↗</a><a href="https://tradeopedia.trade/">Tradeopedia.trade ↗</a></nav><div class="side-footer">Legal System Labs<br>Research & development companion<br>Version 0.1.0-draft<br><br>Technical research, not legal advice.</div></aside><main class="content"><article class="article"><div class="topline">Legal System Labs / Research documentation <span class="status">Working draft</span></div><div class="mini-nav"><a href="/">Overview</a><a href="/framework.html">Complete architecture →</a></div><h1>Tradeopedia Framework</h1>
+<p><strong>A transaction-centered framework for U.S. trade law, cross-border contracts, and international commercial dispute resolution.</strong></p>
+<p><a href="https://tradeopedia.trade/">Tradeopedia.trade</a> · <strong>Legal System Labs</strong> (research companion; in development) · <a href="/framework.html">Technical specification</a></p>
+<blockquote>
+<p><strong>Project status — research / architecture (<code>0.1.0-draft</code>).</strong> This repository currently documents a proposed system, research methodology, and implementation roadmap. Diagrams, interfaces, data models, and integrations described here are design proposals unless specifically documented as built and tested. This is not a production compliance service or an automated legal decision-maker.</p>
+</blockquote>
+<h2>Research premise</h2>
+<p>An import transaction is not merely a customs entry. It is a chain of commercial agreements, product and component origins, payments, logistics records, declarations, government decisions, and possible disputes. Each participant may have different statutory duties and contractual rights.</p>
+<p>The framework treats the <strong>transaction trajectory</strong> as its primary analytical object. It aims to link evidence across the product lifecycle and distinguish two related—but legally separate—sets of questions:</p>
+<ol>
+<li><strong>Public-law obligations and remedies:</strong> importer-of-record (IOR) duties, customs entries, CBP actions, administrative processes, and judicial review, including proceedings before the U.S. Court of International Trade where applicable.</li>
+<li><strong>Private commercial rights and remedies:</strong> contractual warranties, indemnities, payment and delivery obligations, governing law, the CISG, litigation, arbitration agreements, and recognition or enforcement of awards.</li>
+</ol>
+<p>An arbitration clause does <strong>not</strong> itself provide a remedy against CBP, and shifting cost by contract does <strong>not</strong> automatically transfer statutory IOR obligations.</p>
+<h2>System overview</h2>
+<div class="diagram-wrap"><div class="mermaid">flowchart TD
+    S[Public primary sources and SEC agreements] --&gt; I[Source ingestion and document provenance]
+    I --&gt; M[Structured transaction and contract models]
+    M --&gt; C[Trade and customs issue mapping]
+    M --&gt; P[Private contract and dispute mapping]
+    C --&gt; G[Administrative and court pathways]
+    P --&gt; A[Negotiation, litigation, or arbitration pathways]
+    G --&gt; E[Shared evidence and auditable research trace]
+    A --&gt; E
+    E --&gt; O[Research explorer, explainers, and questionnaires]
+</div></div>
+<p>The proposed technical architecture combines source adapters, typed records, clause extraction, deterministic issue flags, evidence provenance, and optional <em>constrained</em> model-assisted analysis. Outputs should retain citations, assumptions, missing information, and explicit uncertainty.</p>
+<p>For the full architecture, data models, Mermaid diagrams, candidate API contracts, and milestones, see <strong><a href="/framework.html">TRADEOPEDIA_FRAMEWORK.md</a></strong>.</p>
+<h2>Research tracks</h2>
+<table>
+<thead>
+<tr>
+  <th>Track</th>
+  <th>Central question</th>
+  <th>Planned research output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Import transaction graph</td>
+  <td>Who did what, when, and on the basis of which records?</td>
+  <td>Structured parties, products, shipments, documents, and event history</td>
+</tr>
+<tr>
+  <td>Customs and IOR responsibilities</td>
+  <td>What public-law issues arise, and what procedures may apply?</td>
+  <td>Source-linked issues, documentary gaps, and procedural maps</td>
+</tr>
+<tr>
+  <td>Contract risk allocation</td>
+  <td>How do agreements allocate origin, tariffs, records, delivery, indemnity, and cooperation risks?</td>
+  <td>Clause-level comparisons and exception flags</td>
+</tr>
+<tr>
+  <td>International sales law</td>
+  <td>Which facts and clauses affect CISG and governing-law analysis?</td>
+  <td>Research checklists and jurisdiction-sensitive issue maps</td>
+</tr>
+<tr>
+  <td>Commercial dispute resolution</td>
+  <td>Is there a valid arbitration agreement, and what alternative pathways require examination?</td>
+  <td>Separate litigation/arbitration procedural maps and evidence checklists</td>
+</tr>
+<tr>
+  <td>Evidence and reproducibility</td>
+  <td>Can a researcher retrace each observation to its source?</td>
+  <td>Versioned source manifest, citations, annotations, and decision traces</td>
+</tr>
+</tbody>
+</table>
+<h2>Initial dataset: SEC contract research</h2>
+<p>The first research milestone is a <strong>curated sample of approximately 10–20 publicly filed agreements from SEC EDGAR</strong>, selected and annotated according to a documented sampling protocol. The goal is not to treat SEC exhibits as universal model contracts, but to study observed clause patterns and omissions.</p>
+<p>Initial fields of interest include:</p>
+<ul>
+<li>Parties, transaction subject, effective date, and publicly disclosed context</li>
+<li>Delivery terms and Incoterms references (where present)</li>
+<li>Importer-of-record designation and customs cooperation</li>
+<li>Tariff, tax, origin, classification, and documentation provisions</li>
+<li>Representations, warranties, indemnity, liability limits, and notice periods</li>
+<li>Governing law, CISG inclusion or exclusion, forum selection, and arbitration language</li>
+<li>Dispute procedure, arbitral seat/institution (if specified), and enforcement considerations</li>
+</ul>
+<p>Each extracted observation should link to the filing or document location and identify whether it is a verbatim clause, a human annotation, a deterministic flag, or an unverified model-generated suggestion. <strong>No corpus has been represented here as collected or validated yet.</strong></p>
+<h2>Candidate source systems</h2>
+<ul>
+<li><a href="https://www.sec.gov/edgar/search/">SEC EDGAR</a> — public filings and contract exhibits</li>
+<li><a href="https://rulings.cbp.gov/">CBP CROSS</a> — customs rulings</li>
+<li><a href="https://uscode.house.gov/">U.S. Code</a> and <a href="https://www.federalregister.gov/">Federal Register</a> — federal legal authorities and rulemaking</li>
+<li><a href="https://www.cit.uscourts.gov/">U.S. Court of International Trade</a> and <a href="https://www.courtlistener.com/">CourtListener</a> — selected decisions and docket/research metadata</li>
+<li><a href="https://uncitral.un.org/en/texts/salegoods/conventions/sale_of_goods/cisg">UNCITRAL CISG</a> and <a href="https://uncitral.un.org/en/texts/arbitration">UNCITRAL arbitration materials</a> — international sales and arbitration instruments</li>
+</ul>
+<p>These are <em>candidate sources</em>, not evidence of live or authorized integrations. Fetching, licensing, use restrictions, access policies, versioning, and authority status must be evaluated per source.</p>
+<h2>Engineering principles</h2>
+<ol>
+<li><strong>Primary-source traceability:</strong> every material statement or extracted clause has a source identifier, location, and retrieval/version metadata.</li>
+<li><strong>Separation of law and contract:</strong> government obligations, private claims, and adjudicative jurisdiction remain distinct objects.</li>
+<li><strong>Uncertainty by design:</strong> missing evidence and unresolved legal questions produce explicit qualifications or abstention—not a false clearance result.</li>
+<li><strong>Reproducible research:</strong> preserve sampling criteria, normalized schemas, tests, and corrections.</li>
+<li><strong>Data minimization:</strong> keep client-confidential, privileged, nonpublic customs, and secret material out of public datasets.</li>
+<li><strong>Modular integrations:</strong> any language-model or external reasoning service is optional, replaceable, and constrained by source retrieval and validation.</li>
+</ol>
+<h2>Planned repository structure</h2>
+<pre><code>tradeopedia-framework/
+├── README.md
+├── TRADEOPEDIA_FRAMEWORK.md       # foundational technical specification
+├── docs/                          # architecture decisions and methodology (planned)
+├── research/                      # public corpus manifests and annotations (planned)
+├── packages/                      # schemas, adapters, parsers, engines (planned)
+├── examples/                      # synthetic transaction examples (planned)
+└── tests/                         # automated verification (planned)
+</code></pre>
+<p>Only files actually committed to GitHub should be interpreted as present. See the technical specification for a more detailed <strong>proposed</strong>, not implemented, directory layout.</p>
+<h2>Development roadmap</h2>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Establish initial architecture and research scope in <code>TRADEOPEDIA_FRAMEWORK.md</code></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Adopt architecture decision records (ADRs), source manifest, and data dictionary</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Select and annotate an initial SEC agreement corpus</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement and validate source ingestion and typed transaction records</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Build contract clause extraction with traceable citations</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Model independent customs and private-dispute pathways</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement arbitration-agreement and CISG research checklists</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Add validation fixtures, tests, and a read-only research explorer</li>
+</ul>
+<p>These checkboxes report documentation and implementation progress, not legal or regulatory approval.</p>
+<h2>Relationship to the public projects</h2>
+<p><strong><a href="https://tradeopedia.trade/">Tradeopedia.trade</a></strong> publishes accessible explanations and visual models of U.S. trade-law issues. <strong>Legal System Labs</strong> is the developing research companion for working papers, contract datasets, documented experiments, and comparative analysis. <strong>This repository</strong> is intended to hold version-controlled specifications, source code, schemas, synthetic examples, tests, and methods as they are developed.</p>
+<h2>Stewardship and reuse</h2>
+<p><strong>Maintainer:</strong> Emma D. Enriquez<br />
+<strong>Status:</strong> Independent legal-technology research project<br />
+<strong>License:</strong> Not selected. Public visibility does not itself grant a general license to copy, adapt, distribute, or reuse the repository's contents. Contributions and licensing policies will be documented before inviting outside contributions.</p>
+<p>For public project information, visit <a href="https://tradeopedia.trade/">Tradeopedia.trade</a>.</p>
+<h3>Disclaimer</h3>
+<p>This repository is for technical research and general educational use. It is not legal advice, does not establish an attorney–client relationship, does not determine legal compliance, and must not be relied upon to make filing, customs, litigation, arbitration, or other legal decisions. Sources and procedures must be independently verified for the relevant facts, law, dates, jurisdiction, and procedural posture.</p>
+<footer class="foot">Maintained by Emma D. Enriquez · Project documentation and working theory · Not legal advice · <a href="https://github.com/Catrina-max/tradeopedia-framework">GitHub</a></footer></article></main></div><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,securityLevel:'strict',theme:'neutral',flowchart:{htmlLabels:true,useMaxWidth:false}});</script></body></html>

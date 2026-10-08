@@ -1,0 +1,765 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Tradeopedia Framework: transaction-centered research on US trade law, customs compliance, contracts, and arbitration."><title>Full technical specification | Tradeopedia Framework</title><style>
+:root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#182a3a;background:#f8fafc}*{box-sizing:border-box}body{margin:0}a{color:#145d88;text-decoration:none}a:hover{text-decoration:underline}.shell{display:grid;grid-template-columns:264px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#eef3f6;border-right:1px solid #dbe3e9;padding:30px 24px}.wordmark{letter-spacing:.12em;font-size:13px;font-weight:800;color:#203449}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#62798b;margin:14px 0}.sidebar nav a{display:block;padding:11px 12px;margin:4px 0;border-radius:7px;font-size:14px;color:#445769}.sidebar nav a.active,.sidebar nav a:hover{background:#dbe8f0;color:#163d5f;text-decoration:none}.side-footer{border-top:1px solid #d4e0e8;margin-top:30px;padding-top:18px;font-size:12px;line-height:1.7;color:#678}.content{min-width:0;padding:48px clamp(22px,5vw,90px) 90px}.article{max-width:1020px;margin:auto}.topline{font-size:12px;color:#5e7588;text-transform:uppercase;letter-spacing:.13em;border-bottom:1px solid #d9e2e8;padding-bottom:22px}.article h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(38px,5vw,62px);line-height:1.08;letter-spacing:-.025em;margin:38px 0 24px;color:#142b3f}.article h2{font-size:25px;font-weight:650;letter-spacing:-.02em;margin:52px 0 18px;border-top:1px solid #d8e1e7;padding-top:28px}.article h3{margin:28px 0 12px;font-size:19px}.article p,.article li{font-size:15.5px;line-height:1.85;color:#34485a}.article strong{color:#142f45}.article ul,.article ol{padding-left:25px}.article li{padding-left:3px;margin:5px 0}.article blockquote{border-left:3px solid #668eaa;background:#edf3f7;padding:13px 24px;margin:26px 0}.article blockquote p{margin:0;font-size:14px}.article table{border-collapse:collapse;display:block;overflow:auto;width:100%;font-size:13px}.article th{text-align:left;background:#eaf0f5;color:#213d52}.article th,.article td{border-bottom:1px solid #dce4ea;padding:12px 14px;min-width:120px;vertical-align:top}.article td{line-height:1.6}.article pre{background:#182838;color:#e9f1f7;border-radius:8px;overflow:auto;padding:24px;font-size:13px;line-height:1.65}.article :not(pre)>code{background:#e8edf2;padding:2px 5px;border-radius:4px;font-size:.91em}.diagram-wrap{background:#fff;border:1px solid #dce4eb;border-radius:10px;padding:20px;margin:26px 0;overflow-x:auto}.mermaid{display:flex;justify-content:center;min-width:650px}.article hr{border:0;border-top:1px solid #dbe3e9;margin:35px 0}.status{font-size:12px;border:1px solid #c7d5de;border-radius:40px;padding:5px 10px;color:#476476;margin-left:10px;display:inline-block}.mini-nav{display:flex;gap:20px;flex-wrap:wrap;margin:22px 0 0}.mini-nav a{font-size:13px;font-weight:600}.foot{font-size:12px;color:#728796;margin:65px 0 0;padding-top:25px;border-top:1px solid #dce4e9}@media(max-width:850px){.shell{display:block}.sidebar{position:static;height:auto;padding:18px 22px}.sidebar nav{display:flex;flex-wrap:wrap}.sidebar nav a{padding:8px}.side-footer{display:none}.content{padding:28px 20px 60px}.article h1{font-size:37px}.mermaid{min-width:550px}}</style></head><body><div class="shell"><aside class="sidebar"><div class="wordmark">TRADEOPEDIA</div><div class="eyebrow">Framework / Working papers</div><nav aria-label="Main navigation"><a class="" href="/">Overview</a><a class="active" href="/framework.html">Technical specification</a><a href="https://github.com/Catrina-max/tradeopedia-framework">Source on GitHub ↗</a><a href="https://tradeopedia.trade/">Tradeopedia.trade ↗</a></nav><div class="side-footer">Legal System Labs<br>Research & development companion<br>Version 0.1.0-draft<br><br>Technical research, not legal advice.</div></aside><main class="content"><article class="article"><div class="topline">Legal System Labs / Research documentation <span class="status">Working draft</span></div><div class="mini-nav"><a href="/">Overview</a><a href="/framework.html">Complete architecture →</a></div><h1>Tradeopedia / Legal System Labs</h1>
+<h2>Technical Framework: U.S. Import Transactions, Trade Compliance, Commercial Disputes, and International Arbitration</h2>
+<p><strong>Status:</strong> Working architecture / proposed implementation<br />
+<strong>Version:</strong> <code>0.1.0-draft</code><br />
+<strong>Last updated:</strong> 2026-10-07<br />
+<strong>Project:</strong> <a href="https://tradeopedia.trade/">Tradeopedia</a> · Legal System Labs (research and development companion)<br />
+<strong>Maintainer:</strong> Emma D. Enriquez<br />
+<strong>Scope:</strong> U.S. federal trade law, international sale of goods, contract risk allocation, and private cross-border dispute resolution<br />
+<strong>License:</strong> To be selected before public contributions or code reuse; no license is implied by publication.</p>
+<blockquote>
+<p><strong>Repository status notice:</strong> This document specifies a proposed system and a research agenda. A component described here is <strong>not</strong> represented as implemented, validated, connected to an external API, or approved for production unless explicitly marked as such in a separate implementation inventory. All scenarios and risk assessments are educational and require independent legal and factual review.</p>
+</blockquote>
+<hr />
+<h2>1. Abstract</h2>
+<p><strong>Tradeopedia</strong> models an import not as a single customs entry but as a sequence of interconnected legal, commercial, documentary, and regulatory events. The analytical unit is the <strong>transaction trajectory</strong>: a product, its component and supplier provenance, the purchase agreement, transport and customs records, the importer-of-record (IOR) obligations, government action, and potential contractual recourse against private parties.</p>
+<p>The <strong>international arbitration component</strong> adds a separate, connected legal track for disputes between buyers, sellers, manufacturers, distributors, logistics providers, insurers, and other private parties. It must not collapse public-law customs review into contractual dispute resolution. A CBP determination may create loss or expose an evidentiary inconsistency; contractual rights and arbitral jurisdiction still depend on the underlying agreements, applicable law, and independently established facts.</p>
+<p>The platform's initial research objective is to index <strong>10–20 publicly filed agreements from SEC EDGAR</strong>, extract selected contractual provisions, link those provisions to primary authorities and relevant cases, and present an auditable, source-grounded comparison. Research findings should remain distinct from automated legal conclusions.</p>
+<h3>1.1 System hypotheses</h3>
+<ol>
+<li><strong>Transaction-first indexing</strong> produces better issue identification than independent topic searches for tariffs, contracts, and arbitration.</li>
+<li><strong>IOR-centered responsibility mapping</strong> exposes asymmetry between public-law liability to CBP and private contractual risk allocation.</li>
+<li><strong>Clause-level contract analysis</strong> can identify missing or conflicting risk-transfer terms without claiming those terms are enforceable.</li>
+<li><strong>Dual-track dispute mapping</strong> improves understanding of parallel agency, court, commercial litigation, settlement, and arbitration processes.</li>
+<li><strong>Evidence provenance and abstention</strong> are architectural requirements, not optional interface features.</li>
+</ol>
+<h3>1.2 Non-goals</h3>
+<ul>
+<li>Automated legal advice or assertions that a shipment, contract, party, or transaction is “legally cleared.”</li>
+<li>Automated determination of HTS classification, origin, antidumping/countervailing duties, sanctions status, liability, or arbitration enforceability without validated legal review.</li>
+<li>Treating a customs broker, Incoterm, DDP term, supplier warranty, or arbitration clause as automatically shifting statutory IOR responsibility.</li>
+<li>Treating arbitration as a procedural remedy against CBP or replacing jurisdictional prerequisites for the U.S. Court of International Trade (CIT).</li>
+<li>Ingestion of nonpublic ACE, client contracts, or privileged matter data into a public research database.</li>
+</ul>
+<hr />
+<h2>2. Reference architecture</h2>
+<div class="diagram-wrap"><div class="mermaid">flowchart LR
+    subgraph SOURCES[Primary and public source layer]
+      SEC[SEC EDGAR agreements]
+      CBP[CBP CROSS / public guidance]
+      LAW[U.S. Code / CFR / Federal Register]
+      COURTS[CIT / appellate decisions / CourtListener]
+      INTL[UNCITRAL / treaty texts / institutional rules]
+    end
+    subgraph PIPELINE[Ingestion and normalization]
+      GET[Adapters and fetch jobs]
+      RAW[Immutable source snapshots]
+      PARSE[Document and clause parser]
+      PROV[Provenance / version / citations]
+    end
+    subgraph MODEL[Typed legal transaction graph]
+      TX[Transaction + product + parties]
+      DOC[Documents + evidence]
+      GOV[Government actions + deadlines]
+      PRIV[Contract rights + dispute clauses]
+    end
+    subgraph ENGINES[Analytical engines]
+      RULE[Deterministic issue rules]
+      RET[Source-linked retrieval]
+      LLM[Optional constrained reasoning adapter]
+      TRACE[Auditable decision trace]
+    end
+    subgraph OUTPUT[User-facing interfaces]
+      EXPLAIN[Tradeopedia explainers]
+      LAB[Legal System Labs data explorer]
+      Q[Importer / counsel questionnaire]
+      EXPORT[Evidence and analysis export]
+    end
+    SOURCES --&gt; GET --&gt; RAW --&gt; PARSE --&gt; PROV
+    PROV --&gt; MODEL
+    TX --&gt; RULE
+    DOC --&gt; RET
+    GOV --&gt; RULE
+    PRIV --&gt; RULE
+    RULE --&gt; TRACE
+    RET --&gt; TRACE
+    RET --&gt; LLM --&gt; TRACE
+    TRACE --&gt; OUTPUT
+</div></div>
+<p><strong>Design boundary:</strong> deterministic data extraction and issue flags are distinguished from interpretive outputs. Any generative model, including a possible <strong>Jev</strong> adapter, is replaceable, server-side, constrained to retrieved materials, and capable of explicitly declining to answer. “Jev” is an <strong>integration candidate</strong>, not a confirmed API capability or dependency.</p>
+<h3>2.1 Suggested modules</h3>
+<table>
+<thead>
+<tr>
+  <th>Package</th>
+  <th>Responsibility</th>
+  <th>Planned artifacts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>sources-sec</code></td>
+  <td>EDGAR filing discovery, exhibit inventory, agreement fetching</td>
+  <td>accession metadata, agreement snapshots</td>
+</tr>
+<tr>
+  <td><code>sources-us-law</code></td>
+  <td>statutes, regulations, Federal Register and CBP rulings</td>
+  <td>normalized authority references</td>
+</tr>
+<tr>
+  <td><code>sources-cases</code></td>
+  <td>CIT, Federal Circuit, and selected related decisions</td>
+  <td>opinion metadata, procedural posture</td>
+</tr>
+<tr>
+  <td><code>sources-arbitration</code></td>
+  <td>treaties, model law materials and public institutional rules</td>
+  <td>jurisdiction/rules registry</td>
+</tr>
+<tr>
+  <td><code>contracts</code></td>
+  <td>Clause parsing and provision taxonomy</td>
+  <td>clause records and comparisons</td>
+</tr>
+<tr>
+  <td><code>transactions</code></td>
+  <td>Product, seller, buyer, IOR, broker, carrier, shipment, and entries</td>
+  <td>typed transaction graph</td>
+</tr>
+<tr>
+  <td><code>customs</code></td>
+  <td>Entry events, documentary gaps, CBP actions, issue triage</td>
+  <td>review checklist, deadline candidates</td>
+</tr>
+<tr>
+  <td><code>disputes</code></td>
+  <td>Agency and court pathways; private claims</td>
+  <td>parallel-dispute graph</td>
+</tr>
+<tr>
+  <td><code>arbitration</code></td>
+  <td>Consent, clause review, institution/seat/law, award enforcement</td>
+  <td>arbitration eligibility checklist</td>
+</tr>
+<tr>
+  <td><code>evidence</code></td>
+  <td>Artifact ledger, provenance, confidence and citations</td>
+  <td>immutable evidence manifest</td>
+</tr>
+<tr>
+  <td><code>reasoning</code></td>
+  <td>Deterministic rules and optional LLM/Jev gateway</td>
+  <td>abstaining, cited outputs</td>
+</tr>
+<tr>
+  <td><code>web</code></td>
+  <td>Research/documentation UI and questionnaire</td>
+  <td>read-only explorer and reports</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. Legal and transactional object model</h2>
+<p>The core record is a <strong>transaction</strong>, not a legal case. A transaction can have multiple products, entries, agreements, and disputes. A dispute can reference multiple transactions and several distinct legal theories.</p>
+<div class="diagram-wrap"><div class="mermaid">classDiagram
+    class Transaction {
+      +UUID id
+      +string reference
+      +date contract_date
+      +string currency
+      +string status
+    }
+    class Party {
+      +UUID id
+      +string legal_name
+      +string jurisdiction
+      +string[] roles
+    }
+    class Product {
+      +UUID id
+      +string description
+      +string[] components
+      +string candidate_hts
+      +string origin_claim
+    }
+    class Agreement {
+      +UUID id
+      +string governing_law
+      +string source_id
+      +string extraction_status
+    }
+    class Clause {
+      +UUID id
+      +string category
+      +string text_span
+      +string interpretation_status
+    }
+    class CustomsEntry {
+      +UUID id
+      +string entry_reference
+      +date entry_date
+      +UUID importer_of_record
+    }
+    class GovernmentAction {
+      +UUID id
+      +string agency
+      +string action_type
+      +date action_date
+    }
+    class Dispute {
+      +UUID id
+      +string track
+      +string forum_candidate
+      +string status
+    }
+    class Evidence {
+      +UUID id
+      +string source_uri
+      +string sha256
+      +string visibility
+    }
+    Transaction &quot;1&quot; --&gt; &quot;1..*&quot; Party
+    Transaction &quot;1&quot; --&gt; &quot;1..*&quot; Product
+    Transaction &quot;1&quot; --&gt; &quot;0..*&quot; Agreement
+    Transaction &quot;1&quot; --&gt; &quot;0..*&quot; CustomsEntry
+    Transaction &quot;1&quot; --&gt; &quot;0..*&quot; Dispute
+    Agreement &quot;1&quot; --&gt; &quot;0..*&quot; Clause
+    CustomsEntry &quot;1&quot; --&gt; &quot;0..*&quot; GovernmentAction
+    Dispute &quot;1&quot; --&gt; &quot;0..*&quot; Evidence
+    Clause &quot;0..*&quot; --&gt; &quot;0..*&quot; Evidence
+</div></div>
+<h3>3.1 Canonical identifiers</h3>
+<ul>
+<li>Public filing: SEC Central Index Key (<code>CIK</code>) + accession number + document filename.</li>
+<li>Agreement: content digest (<code>sha256</code>) plus filing provenance; do not assume identical exhibit filenames represent identical legal instruments.</li>
+<li>Clause: agreement identifier + section hierarchy + start/end offsets + parser version.</li>
+<li>Authority: issuing body, document identifier, section, effective/version dates and canonical URL.</li>
+<li>Case: court identifier, docket/citation, decision date, opinion/version source.</li>
+<li>Transaction: internal UUID; synthetic examples must be tagged <code>synthetic: true</code>.</li>
+</ul>
+<h3>3.2 Example typed record (illustrative)</h3>
+<pre><code>type EvidenceRef = {
+  sourceId: string;
+  uri: string;
+  retrievedAt: string; // ISO 8601
+  sha256: string;
+  section?: string;
+  quotedSpan?: { start: number; end: number };
+};
+
+type ReviewState = &#x27;unreviewed&#x27; | &#x27;machine_extracted&#x27; | &#x27;human_verified&#x27; | &#x27;contested&#x27;;
+
+type IssueFinding = {
+  id: string;
+  transactionId: string;
+  track: &#x27;customs_public_law&#x27; | &#x27;commercial_private_law&#x27;;
+  issueCode: string;
+  observation: string;
+  sourceEvidence: EvidenceRef[];
+  missingFacts: string[];
+  assumptions: string[];
+  reviewState: ReviewState;
+  conclusion: &#x27;not_determined&#x27;;
+};
+</code></pre>
+<p>The <strong>schema should permit uncertainty</strong>: absence of a clause in machine-extracted text is not proof that the executed agreement lacks it.</p>
+<hr />
+<h2>4. Import lifecycle and public-law responsibility</h2>
+<h3>4.1 Event model</h3>
+<div class="diagram-wrap"><div class="mermaid">flowchart TD
+    A[Product design / component provenance] --&gt; B[Supplier selection and due diligence]
+    B --&gt; C[Purchase agreement / warranties / Incoterms]
+    C --&gt; D[Production and origin evidence]
+    D --&gt; E[Transport and broker instructions]
+    E --&gt; F[Importer of record / customs entry]
+    F --&gt; G[CBP release / examination / detention]
+    G --&gt; H[Liquidation / assessment / post-entry events]
+    H --&gt; I{Government action or disputed determination?}
+    I -- No --&gt; J[Retention / audit readiness]
+    I -- Yes --&gt; K[Classify action and procedural posture]
+    K --&gt; L[Applicable agency route / protest / review analysis]
+    L --&gt; M[Potential CIT review subject to jurisdiction and deadlines]
+    G --&gt; N[Document gaps / commercial cost or delay]
+    N --&gt; O[Potential private contract claim]
+    M -. shared evidence, distinct claims .-&gt; O
+</div></div>
+<p>Under <strong>19 U.S.C. § 1484</strong>, the qualifying IOR is required to use reasonable care in entry-related submissions. Allocation of costs or warranties under a private agreement does not, by itself, displace applicable customs statutes. Potential retention and recordkeeping duties must be mapped <strong>by role and record category</strong>, using the applicable statute and regulations, not assigned uniformly to every supplier or broker.</p>
+<h3>4.2 Customs issue classification</h3>
+<p>A proposed issue detector records facts and routes questions; it does not automatically select a remedy:</p>
+<table>
+<thead>
+<tr>
+  <th>Issue family</th>
+  <th>Illustrative inputs</th>
+  <th>System output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Classification / HTS</td>
+  <td>product specification, component list, ruling</td>
+  <td>candidate inconsistency and missing evidence</td>
+</tr>
+<tr>
+  <td>Customs valuation</td>
+  <td>invoice, assists, royalties, related-party facts</td>
+  <td>transaction-value issue checklist</td>
+</tr>
+<tr>
+  <td>Origin / marking</td>
+  <td>bill of materials, manufacturing stages</td>
+  <td>provenance gaps and origin questions</td>
+</tr>
+<tr>
+  <td>Forced labor / UFLPA</td>
+  <td>supplier chain, site, traceability files</td>
+  <td>source-linked due diligence checklist</td>
+</tr>
+<tr>
+  <td>AD/CVD</td>
+  <td>product description, producer/exporter, order references</td>
+  <td>potential scope and cash-deposit questions</td>
+</tr>
+<tr>
+  <td>Import restrictions</td>
+  <td>product, country, agency requirements</td>
+  <td>other-government-agency referral flags</td>
+</tr>
+<tr>
+  <td>Entry / recordkeeping</td>
+  <td>entries, broker transmissions, retention ledger</td>
+  <td>document request and audit-readiness status</td>
+</tr>
+<tr>
+  <td>CBP dispute</td>
+  <td>notice, decision, date and entry status</td>
+  <td>possible procedural routes; human deadline review</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Deadline policy:</strong> no filing or protest date is emitted as legally controlling until the specific action, governing provision, service/notice dates, exceptions, and jurisdiction have been verified by a human reviewer.</p>
+<hr />
+<h2>5. Two dispute tracks, not one</h2>
+<h3>5.1 Routing model</h3>
+<div class="diagram-wrap"><div class="mermaid">flowchart TD
+    LOSS[Loss, detention, reclassification, duty change, nonpayment or nonconformity]
+    LOSS --&gt; T{Against whom is relief sought?}
+    T --&gt;|U.S. agency| PUB[Public law track]
+    T --&gt;|Seller / buyer / broker / other private party| PRI[Private commercial track]
+    T --&gt;|Both| BOTH[Parallel analysis; independent requirements]
+    BOTH --&gt; PUB
+    BOTH --&gt; PRI
+    PUB --&gt; ACT[Identify agency decision and statutory review mechanism]
+    ACT --&gt; CIT[Agency process / appropriate court, potentially CIT]
+    PRI --&gt; AGR[Identify contracts, parties, claims, law and forum]
+    AGR --&gt; CONSENT{Valid arbitration agreement or later consent?}
+    CONSENT --&gt;|Yes / arguable| ARB[Arbitration pathway assessment]
+    CONSENT --&gt;|No / unestablished| LIT[Litigation / negotiation / mediation assessment]
+    ARB --&gt; ENF[Potential award recognition and enforcement]
+    CIT -. evidentiary or financial effect only .-&gt; ARB
+</div></div>
+<p><strong>Critical separation:</strong> statutory CBP/CIT matters and private arbitration are not interchangeable. An arbitral tribunal may decide a contractual allocation of loss between consenting private parties where permitted, but does not thereby set aside a CBP action, bind CBP, or assume CIT jurisdiction.</p>
+<h3>5.2 Example: supplier origin warranty versus IOR exposure</h3>
+<p><strong>Hypothetical:</strong> an importer pays additional duties or experiences a shipment detention following an origin-document discrepancy; its agreement contains a supplier origin warranty and a dispute clause.</p>
+<ol>
+<li><strong>Public track:</strong> preserve entry records and the government notice; determine the exact agency action, legal basis, review mechanism and independently verified deadlines.</li>
+<li><strong>Private track:</strong> extract the representation, indemnity, notice, cooperation, limitation-of-liability, causation and dispute-resolution clauses; assess potential remedies without presuming breach.</li>
+<li><strong>Parallel evidence:</strong> versioned bills of materials, purchase orders, invoices, supplier representations, production records, broker instructions, communications and notices.</li>
+<li><strong>Distinct outcome records:</strong> government action outcome, contract claim outcome, offsets/recovery and unresolved uncertainty.</li>
+</ol>
+<hr />
+<h2>6. International sale of goods and arbitration subsystem</h2>
+<h3>6.1 Contract-to-dispute graph</h3>
+<div class="diagram-wrap"><div class="mermaid">flowchart TD
+  A[International sales agreement] --&gt; B[Parties / goods / delivery / payment]
+  B --&gt; C[Choice of law; CISG applicability and exclusion analysis]
+  C --&gt; D[Performance and evidence obligations]
+  D --&gt; E[Risk allocation: warranties / indemnity / tariffs / origin / audit cooperation]
+  E --&gt; F[Dispute arises]
+  F --&gt; G{Existing arbitration clause?}
+  G -- Yes --&gt; H[Consent, scope, validity, parties and arbitrability]
+  G -- No --&gt; I{Post-dispute arbitration agreement?}
+  I -- Yes --&gt; H
+  I -- No --&gt; J[Forum-selection / jurisdiction / litigation / ADR]
+  H --&gt; K[Seat, institution/rules, language, number of arbitrators]
+  K --&gt; L[Commencement / jurisdiction objections / interim relief]
+  L --&gt; M[Evidence, hearing, award and costs]
+  M --&gt; N[Annulment or set-aside at seat; enforcement elsewhere]
+  N --&gt; O[New York Convention / applicable domestic law]
+</div></div>
+<h3>6.2 Questions the subsystem must preserve</h3>
+<table>
+<thead>
+<tr>
+  <th>Category</th>
+  <th>Required analysis</th>
+  <th>Do not infer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>CISG</td>
+  <td>states/place of business, Art. 1 applicability, exclusions, Art. 6 choice, scope and reservations</td>
+  <td>that choosing “New York law” automatically excludes CISG</td>
+</tr>
+<tr>
+  <td>Contract structure</td>
+  <td>executed version, order of precedence, purchase-order terms, amendments</td>
+  <td>that an SEC-filed form equals the executed transaction contract</td>
+</tr>
+<tr>
+  <td>Arbitration consent</td>
+  <td>parties bound, formation, scope, delegation, validity, non-signatories</td>
+  <td>that an arbitration clause binds every supply-chain participant</td>
+</tr>
+<tr>
+  <td>Procedure</td>
+  <td>institutional/ad hoc rules, seat vs venue, language, appointment, emergency relief</td>
+  <td>that institution, seat, governing law and hearing location are equivalent</td>
+</tr>
+<tr>
+  <td>Merits</td>
+  <td>performance, notice, causation, defenses, damages, limitation clauses</td>
+  <td>that CBP duty reassessment automatically proves supplier breach</td>
+</tr>
+<tr>
+  <td>Recognition</td>
+  <td>award, jurisdiction, Convention applicability and defenses, local enforcement law</td>
+  <td>that winning an award guarantees collection</td>
+</tr>
+</tbody>
+</table>
+<h3>6.3 Arbitration-clause data extraction</h3>
+<pre><code>{
+  &quot;clause_type&quot;: &quot;dispute_resolution&quot;,
+  &quot;source_agreement_id&quot;: &quot;example-agreement&quot;,
+  &quot;arbitration_present&quot;: &quot;unknown&quot;,
+  &quot;institution&quot;: null,
+  &quot;rules&quot;: null,
+  &quot;seat&quot;: null,
+  &quot;governing_law&quot;: null,
+  &quot;language&quot;: null,
+  &quot;arbitrator_count&quot;: null,
+  &quot;scope&quot;: null,
+  &quot;carveouts&quot;: [],
+  &quot;interim_relief&quot;: null,
+  &quot;consolidation_joinder&quot;: null,
+  &quot;source_spans&quot;: [],
+  &quot;verification_state&quot;: &quot;unreviewed&quot;
+}
+</code></pre>
+<p><code>arbitration_present</code> should be a three-state field (<code>yes</code>, <code>no</code>, <code>unknown</code>) after extraction, never a binary default. A missing clause in a limited filing excerpt remains <code>unknown</code>.</p>
+<h3>6.4 CISG analysis and choice-of-law discipline</h3>
+<p>Treat <strong>CISG</strong> (United Nations Convention on Contracts for the International Sale of Goods) as a potentially applicable substantive sales-law regime, distinct from an arbitration agreement and from the law of the arbitral seat. Evaluate applicability, any effective exclusion, and issues outside CISG scope separately. Avoid assuming either that every international sale is governed by CISG or that a generic domestic-law selection necessarily opts out.</p>
+<h3>6.5 Private claim taxonomy</h3>
+<ul>
+<li>Nonconforming goods; documentation warranties; inspection and rejection.</li>
+<li>Origin, classification, valuation-information and regulatory cooperation warranties.</li>
+<li>Indemnification for assessments, penalties, storage, demurrage and defense costs, subject to contract and law.</li>
+<li>Price adjustment; tariff-change clauses; force majeure/hardship; allocation of newly imposed duties.</li>
+<li>Broker / freight-forwarder service agreements and related duties (analyzed separately from the sales agreement).</li>
+<li>Notice, cure, limitations, evidence retention, audit access, third-party claims and insurance.</li>
+<li>Confidentiality, interim measures, expert determination, mediation, litigation, arbitration and award enforcement.</li>
+</ul>
+<hr />
+<h2>7. Contract corpus: EDGAR-first research design</h2>
+<p><strong>Pilot corpus:</strong> 10–20 publicly accessible SEC-filed international supply, manufacturing, distribution or purchase agreements, selected according to documented criteria. The corpus must be assembled and verified; no claim is made that these agreements have already been downloaded or reviewed.</p>
+<h3>7.1 Sampling protocol</h3>
+<ol>
+<li>Define inclusion/exclusion criteria and a reproducible search log (forms, exhibit type, date range, industry and contract structure).</li>
+<li>Resolve issuer CIK, accession number, filing URL, exhibit label and exact exhibit URL.</li>
+<li>Download permitted public documents; respect SEC fair-access policy, identification headers and throttling.</li>
+<li>Retain original source file, response metadata, timestamp, checksum and text extraction method.</li>
+<li>Extract clauses with page/section/text offsets and assign <code>machine_extracted</code> review state.</li>
+<li>Independently verify key clauses, redactions, omissions, exhibits incorporated by reference, amendments, and governing version.</li>
+<li>Publish metadata, selected short source-linked excerpts, annotation methodology and reproducible derived data subject to review of rights and access terms; do not imply confidential treatment omissions are publicly known.</li>
+</ol>
+<p><strong>API distinction:</strong> SEC <code>data.sec.gov</code> APIs provide filing submission histories and XBRL data; access to specific filing <strong>exhibits</strong> may require retrieving EDGAR archive files or appropriate public index pages. <code>companyfacts</code> is not a contract-text API. <code>data.sec.gov</code> does not support cross-origin browser access; use a server-side adapter.</p>
+<h3>7.2 Clause taxonomy (v0)</h3>
+<p><code>party_role</code>, <code>product_spec</code>, <code>incoterm_delivery</code>, <code>ior</code>, <code>customs_cooperation</code>, <code>origin_warranty</code>, <code>classification_support</code>, <code>audit_access</code>, <code>record_retention</code>, <code>tariff_change</code>, <code>price_adjustment</code>, <code>indemnity</code>, <code>liability_cap</code>, <code>consequential_damages</code>, <code>notice_cure</code>, <code>insurance</code>, <code>governing_law</code>, <code>cisg</code>, <code>forum_selection</code>, <code>arbitration</code>, <code>mediation</code>, <code>interim_relief</code>, <code>enforcement</code>, <code>termination</code>.</p>
+<h3>7.3 Research views</h3>
+<ul>
+<li><strong>Agreement matrix:</strong> agreement × clause category × source/verification status.</li>
+<li><strong>Risk allocation map:</strong> importing party versus supplier versus broker duties, with statutory and contractual layers explicitly separated.</li>
+<li><strong>Comparison explorer:</strong> excerpts, comparable formulations, missing/unknown values, source metadata.</li>
+<li><strong>Case-to-clause links:</strong> jurisdiction, claim and legal issue annotations; <strong>not</strong> automated precedent matching.</li>
+<li><strong>Dispute-path visualizer:</strong> independent public and private routes with shared evidence.</li>
+</ul>
+<hr />
+<h2>8. Evidence model, retrieval and constrained reasoning</h2>
+<div class="diagram-wrap"><div class="mermaid">sequenceDiagram
+    participant User as User / Counsel
+    participant API as API
+    participant Rule as Rule Engine
+    participant Search as Source Retriever
+    participant AI as Optional Jev / Model Adapter
+    participant Audit as Decision Trace
+    User-&gt;&gt;API: Submit transaction facts and documents
+    API-&gt;&gt;Audit: Record scenario version and consent
+    API-&gt;&gt;Rule: Compute deterministic flags
+    Rule-&gt;&gt;Search: Request controlling / relevant sources
+    Search--&gt;&gt;Rule: Source spans + provenance
+    Rule-&gt;&gt;Audit: Save flags, assumptions, gaps
+    opt Optional language-model explanation
+      Rule-&gt;&gt;AI: Restricted evidence + bounded question
+      AI--&gt;&gt;Rule: Cited candidate explanation or abstain
+      Rule-&gt;&gt;Audit: Record model/version, output, citations
+    end
+    Audit--&gt;&gt;User: Findings, missing evidence, next-review questions
+</div></div>
+<h3>8.1 Output contract</h3>
+<p>Each analytical response must provide:</p>
+<ul>
+<li><strong>Observed facts</strong> (with evidence links).</li>
+<li><strong>Assumptions / unknowns</strong> (separately identified).</li>
+<li><strong>Candidate legal issues</strong> (with controlling or relevant primary sources, where available).</li>
+<li><strong>Procedural uncertainties</strong> (forum, deadlines, arbitrability, notice).</li>
+<li><strong>Alternatives requiring review</strong>, never a categorical resolution when facts are incomplete.</li>
+<li><strong>Audit metadata</strong> (tool, parser/model version, retrieval time, source version and reviewer state).</li>
+</ul>
+<h3>8.2 Abstention and security requirements</h3>
+<ul>
+<li>Fail closed for missing source, inconsistent record, questionable effective date, uncertain party identity or unresolved governing instrument.</li>
+<li>Keep third-party/source text in an untrusted data boundary: never execute instructions appearing in a filing or retrieved document.</li>
+<li>Isolate confidential client submissions from the public research corpus; deny default cross-tenant retrieval.</li>
+<li>Redact secrets/PII from logs; use access controls, encryption and retention/deletion rules appropriate to deployment.</li>
+<li>A generated explanation cannot set <code>human_verified</code>, change legal status, or trigger a filing.</li>
+<li>Export provenance and a machine-readable decision trace for repeatability.</li>
+</ul>
+<hr />
+<h2>9. Importer and in-house counsel questionnaire (schema outline)</h2>
+<p>Questionnaire responses generate <strong>issue maps and evidence checklists</strong>, not advice or legal clearance.</p>
+<table>
+<thead>
+<tr>
+  <th>Group</th>
+  <th>Core questions</th>
+  <th>Derived artifact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Product</td>
+  <td>What product, components, declared HTS, origin and manufacturing sites?</td>
+  <td>product and provenance graph</td>
+</tr>
+<tr>
+  <td>Parties</td>
+  <td>Who is seller, buyer, IOR, broker, freight forwarder and carrier?</td>
+  <td>responsibilities matrix</td>
+</tr>
+<tr>
+  <td>Documents</td>
+  <td>Which agreement, invoice, PO, bill of lading, entry, origin records and broker instructions exist?</td>
+  <td>missing-document register</td>
+</tr>
+<tr>
+  <td>Government event</td>
+  <td>Is there a hold, notice, liquidation, reassessment, investigation or other action? Dates?</td>
+  <td>public-law procedural checklist</td>
+</tr>
+<tr>
+  <td>Commercial claim</td>
+  <td>What promise, loss, remedy, notice term or limitation is implicated?</td>
+  <td>contractual issues map</td>
+</tr>
+<tr>
+  <td>Arbitration</td>
+  <td>Clause or post-dispute agreement? Parties, scope, seat, rules and law?</td>
+  <td>consent and forum checklist</td>
+</tr>
+<tr>
+  <td>Enforcement</td>
+  <td>Where are counterparties and potential assets? Other proceedings?</td>
+  <td>enforcement research questions</td>
+</tr>
+<tr>
+  <td>Confidence</td>
+  <td>What facts are disputed, unknown or unverified?</td>
+  <td>abstention/review queue</td>
+</tr>
+</tbody>
+</table>
+<h3>9.1 Decision tree</h3>
+<div class="diagram-wrap"><div class="mermaid">flowchart TD
+  START[Questionnaire start] --&gt; DOCS{Core documents available?}
+  DOCS -- No --&gt; GAP[Collect and classify missing evidence]
+  DOCS -- Yes --&gt; EVENT{Government or commercial issue?}
+  GAP --&gt; EVENT
+  EVENT --&gt;|Government| G[CBP action / entry / jurisdiction assessment]
+  EVENT --&gt;|Commercial| P[Contract / applicable law / parties assessment]
+  EVENT --&gt;|Both| G
+  EVENT --&gt;|Both| P
+  G --&gt; REVIEW[Human verification of sources, deadlines, and remedies]
+  P --&gt; ARB{Arbitration consent evidenced?}
+  ARB -- Yes --&gt; ROUTE[Arbitration pathway questions]
+  ARB -- No --&gt; OTHER[Litigation / settlement / mediation questions]
+  ARB -- Unknown --&gt; GAP
+  ROUTE --&gt; REVIEW
+  OTHER --&gt; REVIEW
+  REVIEW --&gt; OUT[Export evidence ledger and unresolved issue map]
+</div></div>
+<hr />
+<h2>10. Proposed repository organization</h2>
+<pre><code>tradeopedia-framework/
+├── README.md
+├── docs/
+│   ├── TRADEOPEDIA_FRAMEWORK.md      # this document
+│   ├── architecture/
+│   │   ├── adr-0001-transaction-graph.md
+│   │   ├── adr-0002-public-private-tracks.md
+│   │   └── adr-0003-source-provenance.md
+│   ├── legal-sources.md
+│   ├── data-dictionary.md
+│   └── research-methodology.md
+├── apps/
+│   ├── documentation/              # Tradeopedia / Legal System Labs pages
+│   └── explorer/                   # contract and dispute explorer
+├── packages/
+│   ├── schema/
+│   ├── source-adapters/
+│   │   ├── sec/
+│   │   ├── cbp/
+│   │   ├── federal-register/
+│   │   ├── cases/
+│   │   └── arbitration/
+│   ├── contract-parser/
+│   ├── transaction-engine/
+│   ├── dispute-router/
+│   ├── arbitration-engine/
+│   ├── evidence-ledger/
+│   └── reasoning-adapter/
+├── research/
+│   ├── corpus-manifest.example.json
+│   ├── annotation-guidelines.md
+│   └── notebooks/
+├── examples/
+│   └── synthetic-import-dispute.json
+├── tests/
+│   ├── fixtures/
+│   ├── integration/
+│   └── acceptance/
+├── .github/
+│   ├── workflows/
+│   └── ISSUE_TEMPLATE/
+├── .env.example
+├── SECURITY.md
+├── CONTRIBUTING.md
+└── LICENSE                         # add only after license selection
+</code></pre>
+<p><strong>Technology proposal, not current inventory:</strong> TypeScript for typed models and API contracts; a relational store (e.g. PostgreSQL) for entities and evidence, optionally a graph projection for traversal; Python only where useful for reproducible document analysis; Mermaid for documentation diagrams; server-side ingestion jobs; automated schema/tests/CI. Avoid selecting databases or frameworks based solely on diagram aesthetics.</p>
+<hr />
+<h2>11. API contracts (candidate v0)</h2>
+<pre><code>GET  /api/v1/sources/{sourceId}
+GET  /api/v1/agreements?clause=arbitration&amp;review_state=human_verified
+GET  /api/v1/agreements/{agreementId}/clauses
+POST /api/v1/transactions/analyze
+POST /api/v1/disputes/route
+POST /api/v1/arbitration/assess-clause
+GET  /api/v1/analyses/{analysisId}/trace
+</code></pre>
+<p>All <code>POST</code> routes require explicit permission and schema validation. Do not accept a naked model-generated “legal outcome” field. Candidate analysis payload:</p>
+<pre><code>{
+  &quot;transaction_id&quot;: &quot;synthetic-transaction-001&quot;,
+  &quot;facts&quot;: [{&quot;key&quot;: &quot;importer_of_record&quot;, &quot;value&quot;: &quot;Buyer A&quot;, &quot;evidence_ids&quot;: [&quot;ev-1&quot;]}],
+  &quot;questions&quot;: [&quot;Which documents are missing?&quot;, &quot;What dispute tracks require review?&quot;],
+  &quot;outputs_requested&quot;: [&quot;issue_map&quot;, &quot;evidence_checklist&quot;, &quot;trace&quot;]
+}
+</code></pre>
+<h3>11.1 Recommended test gates</h3>
+<ul>
+<li><strong>Source integrity:</strong> checksum, canonical URL, snapshot date and no silently replaced excerpts.</li>
+<li><strong>Schema integrity:</strong> unknown state retained; source spans resolve; cross-document entity references are valid.</li>
+<li><strong>Legal route separation:</strong> supplier arbitration never substitutes for an agency remedy or CIT jurisdiction.</li>
+<li><strong>Abstention:</strong> no clause found in incomplete excerpt → <code>unknown</code>, not <code>no</code>.</li>
+<li><strong>CISG:</strong> choice of forum, seat, domestic state law, and CISG exclusion tested as distinct fields.</li>
+<li><strong>Versioning:</strong> re-ingestion of an amended agreement does not erase the former version.</li>
+<li><strong>Security:</strong> untrusted text cannot alter retrieval policy; private data cannot leak to public explorer.</li>
+<li><strong>Traceability:</strong> every user-visible substantive assertion exposes source and assumptions.</li>
+</ul>
+<hr />
+<h2>12. Implementation roadmap and acceptance criteria</h2>
+<h3>Milestone 0 — Documentation baseline</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>Publish working architecture and Mermaid diagrams in this specification.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Create GitHub repository, license decision, contributor/security policies and CI.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Create architecture decision records and precise implemented-vs-proposed inventory.</li>
+</ul>
+<h3>Milestone 1 — Public contract corpus</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement SEC accession/exhibit retrieval with fair-access throttling and user agent.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Assemble and cite a reproducible 10–20-agreement pilot dataset.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Store immutable artifacts; annotate 8–12 clause categories with human review.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Release corpus manifest and contract comparison explorer.</li>
+</ul>
+<p><strong>Acceptance:</strong> each published extracted clause links to the exact primary document, text span, parser version and reviewer status.</p>
+<h3>Milestone 2 — Trade transaction graph</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Define transactional party-role, product, entry, agreement and evidence schemas.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement synthetic battery and passenger-car examples without asserting compliance outcomes.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Connect statutes, CBP guidance/rulings and selected cases with source timestamps.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Build IOR obligations and document-gap views.</li>
+</ul>
+<p><strong>Acceptance:</strong> scenario output separates regulatory responsibilities from negotiated economic risk allocation.</p>
+<h3>Milestone 3 — Dispute bifurcation</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement public-law action taxonomy and reviewer-controlled deadlines.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement private-party contract claims and agreement version linkage.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Show simultaneous tracks on the same evidence ledger.</li>
+</ul>
+<p><strong>Acceptance:</strong> no private arbitral route is presented as a challenge to government action.</p>
+<h3>Milestone 4 — International arbitration</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Implement a clause parser for consent, scope, institution, rules, seat and governing law.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Add CISG applicability/exclusion review prompts.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Add award/enforcement procedural research graph, with jurisdiction-specific review.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Compare publicly available court decisions and contract provisions with explicit source limits.</li>
+</ul>
+<p><strong>Acceptance:</strong> a scenario with <strong>no arbitration agreement</strong> does not default into arbitration; later consent must be separately documented.</p>
+<h3>Milestone 5 — Optional model integration</h3>
+<ul>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Define provider-neutral constrained reasoning interface (Jev as candidate).</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Add grounded-answer evaluation, adversarial source-content tests and abstention thresholds.</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled/>Publish model cards and limitations for each enabled integration.</li>
+</ul>
+<p><strong>Acceptance:</strong> missing authority or materially disputed facts produce review questions or abstention, not a confident legal conclusion.</p>
+<hr />
+<h2>13. Open research questions</h2>
+<ol>
+<li>When and how do supplier warranties, tariff-change provisions and indemnities shift <strong>economic loss</strong> without shifting <strong>public-law IOR obligations</strong>?</li>
+<li>Which transactional evidence gaps arise most frequently in real SEC agreement samples, and which arise only because public exhibits are incomplete?</li>
+<li>How should a system identify potentially relevant CIT decisions without implying a private party has statutory standing or a reviewable agency decision?</li>
+<li>Which international supply agreements expressly preserve, modify, or exclude CISG and why?</li>
+<li>How frequently do agreements identify seat, governing law, institutional rules and enforcement strategy coherently?</li>
+<li>When would litigation, mediation, expert determination or post-dispute arbitration be preferable <strong>as research questions</strong>, without automatic forum selection?</li>
+<li>Can a versioned legal/evidence graph improve counsel review time while keeping unsupported conclusions at zero?</li>
+</ol>
+<hr />
+<h2>14. Primary authority and technical references</h2>
+<p><strong>U.S. trade and customs</strong></p>
+<ul>
+<li>19 U.S.C. § 1484, Entry of merchandise: <a href="https://uscode.house.gov/view.xhtml?edition=prelim&amp;num=0&amp;req=granuleid%3AUSC-prelim-title19-section1484">https://uscode.house.gov/view.xhtml?edition=prelim&amp;num=0&amp;req=granuleid%3AUSC-prelim-title19-section1484</a></li>
+<li>19 U.S.C. §§ 1508–1509 (recordkeeping and examination), § 1514 (protests), § 1515 (review of protests): <a href="https://uscode.house.gov/">https://uscode.house.gov/</a></li>
+<li>28 U.S.C. § 1581, CIT jurisdiction: <a href="https://uscode.house.gov/view.xhtml?edition=2023&amp;num=0&amp;req=granuleid%3AUSC-2023-title28-section1581">https://uscode.house.gov/view.xhtml?edition=2023&amp;num=0&amp;req=granuleid%3AUSC-2023-title28-section1581</a></li>
+<li>U.S. Court of International Trade: <a href="https://www.cit.uscourts.gov/">https://www.cit.uscourts.gov/</a></li>
+<li>CBP Customs Rulings Online Search System (CROSS): <a href="https://rulings.cbp.gov/">https://rulings.cbp.gov/</a></li>
+<li>Federal Register API documentation: <a href="https://www.federalregister.gov/developers/documentation/api/v1">https://www.federalregister.gov/developers/documentation/api/v1</a></li>
+<li>U.S. International Trade Commission Harmonized Tariff Schedule: <a href="https://hts.usitc.gov/">https://hts.usitc.gov/</a></li>
+</ul>
+<p><strong>International commercial law and arbitration</strong></p>
+<ul>
+<li>UNCITRAL, CISG overview and text: <a href="https://uncitral.un.org/en/texts/salegoods/conventions/sale_of_goods/cisg">https://uncitral.un.org/en/texts/salegoods/conventions/sale_of_goods/cisg</a></li>
+<li>UNCITRAL, International Commercial Arbitration texts (Model Law, Rules, explanatory materials): <a href="https://uncitral.un.org/en/texts/arbitration">https://uncitral.un.org/en/texts/arbitration</a></li>
+<li>UNCITRAL, New York Convention: <a href="https://uncitral.un.org/en/texts/arbitration/conventions/foreign_arbitral_awards">https://uncitral.un.org/en/texts/arbitration/conventions/foreign_arbitral_awards</a></li>
+<li>9 U.S.C. Chapter 2 (U.S. implementation of the New York Convention): <a href="https://uscode.house.gov/view.xhtml?edition=prelim&amp;path=%2Fprelim%40title9%2Fchapter2">https://uscode.house.gov/view.xhtml?edition=prelim&amp;path=%2Fprelim%40title9%2Fchapter2</a></li>
+<li>CourtListener API and documentation: <a href="https://www.courtlistener.com/help/api/">https://www.courtlistener.com/help/api/</a></li>
+</ul>
+<p><strong>Data and engineering</strong></p>
+<ul>
+<li>SEC EDGAR APIs (submissions/XBRL): <a href="https://www.sec.gov/search-filings/edgar-application-programming-interfaces">https://www.sec.gov/search-filings/edgar-application-programming-interfaces</a></li>
+<li>SEC EDGAR access and fair-use guidance: <a href="https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data">https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data</a></li>
+<li>SEC developer resources (rate limits and access policy): <a href="https://www.sec.gov/about/developer-resources">https://www.sec.gov/about/developer-resources</a></li>
+<li>Mermaid documentation: <a href="https://mermaid.js.org/">https://mermaid.js.org/</a></li>
+</ul>
+<p><strong>Source verification policy:</strong> re-check legal text, effective dates, agency policies, API documentation and access conditions at implementation time; a citation's presence here is not a guarantee of continuing accuracy.</p>
+<hr />
+<h2>15. Publication and research governance</h2>
+<p><strong>Tradeopedia.trade:</strong> public explanatory interface to U.S. trade-law systems, example transaction paths and educational questionnaires.<br />
+<strong>Legal System Labs:</strong> companion technical documentation, reproducible research, contract corpus, architecture decisions, experiment logs and development status.<br />
+<strong>GitHub:</strong> canonical version-controlled code, schemas, adapters, tests, synthetic fixtures, issue tracking and this architecture. Avoid publishing privileged/client files or secrets.</p>
+<p>Public research pages should distinguish <strong>observation</strong>, <strong>hypothesis</strong>, <strong>coded rule</strong>, <strong>model-generated explanation</strong>, <strong>human-verified finding</strong>, and <strong>legal conclusion outside system scope</strong>. Record research limitations, amendments and corrections. The architecture is a working theory and should evolve through versioned commits and documented design decisions.</p>
+<p><strong>Contact:</strong> Emma D. Enriquez — see current contact details and disclosures at <a href="https://tradeopedia.trade/">Tradeopedia</a>. Confirm the intended public email before copying contact details into the repository.</p>
+<p><strong>Disclaimer:</strong> This is technical research and educational material, not legal advice; no attorney–client relationship is formed by using or contributing to this repository. References to statutes, treaties, cases and guidance are starting points for independent verification, not legal opinions about any transaction.</p>
+<footer class="foot">Maintained by Emma D. Enriquez · Project documentation and working theory · Not legal advice · <a href="https://github.com/Catrina-max/tradeopedia-framework">GitHub</a></footer></article></main></div><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,securityLevel:'strict',theme:'neutral',flowchart:{htmlLabels:true,useMaxWidth:false}});</script></body></html>
