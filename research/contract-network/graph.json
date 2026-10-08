@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.4.0",
+  "dataset": "3M–Solventum public-filing reference graph (research fixture)",
+  "methodology": "Edges represent documented or provisionally mapped references; a graph edge is not proof that an incorporated term controls any particular dispute.",
+  "entryPoints": ["SEC-004", "SEC-008"],
+  "nodes": [
+    {"id":"SEC-004","title":"3M → Solventum: Master Supply Agreement","kind":"agreement","status":"reviewed_sections","url":"https://www.sec.gov/Archives/edgar/data/1964738/000162828024014887/exhibit1010-8xk.htm","references":[{"target":"SDA-ART-VII","relation":"incorporates_dispute_process","sourceSection":"13.1"},{"target":"SDA-10.2","relation":"incorporates_governing_law_and_forum","sourceSection":"18.7"}]},
+    {"id":"SEC-008","title":"Solventum → 3M: Reverse Master Supply Agreement","kind":"agreement","status":"reviewed_sections","url":"https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit109-8xk.htm","references":[{"target":"SDA-ART-VII","relation":"incorporates_dispute_process","sourceSection":"13.1"},{"target":"SDA-10.2","relation":"incorporates_governing_law_and_forum","sourceSection":"18.7"}]},
+    {"id":"SDA-ART-VII","title":"SDA Article VII: staged dispute resolution","kind":"incorporated_provision","status":"partial","url":"https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm","references":[{"target":"SDA-7.4","relation":"procedure","sourceSection":"7.4"},{"target":"SDA-7.5","relation":"conditional_routing","sourceSection":"7.5"}]},
+    {"id":"SDA-10.2","title":"SDA §10.2: governing law and forum","kind":"incorporated_provision","status":"reviewed_sections","url":"https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm","references":[]},
+    {"id":"SDA-7.4","title":"SDA §7.4: CPR mediation and exceptions","kind":"provision","status":"partial","url":"https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm","references":[{"target":"SCHEDULE-7.4","relation":"references_schedule","sourceSection":"7.4"}]},
+    {"id":"SDA-7.5","title":"SDA §7.5: conditional arbitration category","kind":"provision","status":"partial","url":"https://www.sec.gov/Archives/edgar/data/66740/000162828024014795/exhibit21-8xk.htm","references":[{"target":"SCHEDULE-7.5","relation":"references_schedule","sourceSection":"7.5"}]},
+    {"id":"SCHEDULE-7.4","title":"SDA Schedule 7.4: operative schedule not fully reviewed","kind":"schedule","status":"unavailable","references":[]},
+    {"id":"SCHEDULE-7.5","title":"SDA Schedule 7.5: operative schedule not fully reviewed","kind":"schedule","status":"unavailable","references":[]}
+  ]
+}

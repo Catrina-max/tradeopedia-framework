@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {analyze} from '../packages/clause-dependency/engine.mjs';
+const graph=JSON.parse(readFileSync(new URL('../research/contract-network/graph.json',import.meta.url)));
+test('traces both agreements to shared SDA references',()=>{const r=analyze(graph);assert.equal(r.entryPoints.length,2);assert.equal(r.dependencies.filter(x=>x.to==='SDA-ART-VII').length,2);});
+test('flags missing schedules without issuing forum classification',()=>{const r=analyze(graph);assert.equal(r.assessment,'INCOMPLETE_EVIDENCE');assert.deepEqual(r.alerts.filter(x=>x.kind==='missing_evidence').map(x=>x.id).sort(),['SCHEDULE-7.4','SCHEDULE-7.5']);assert.equal('forum' in r,false);});
+test('supports scoped entry',()=>{const r=analyze(graph,['SEC-004']);assert.equal(r.visitedNodes.some(x=>x.id==='SEC-008'),false);});
+test('detects absent node',()=>{const r=analyze({nodes:[{id:'a',status:'reviewed_sections',references:[{target:'x',relation:'test'}]}]},['a']);assert.equal(r.alerts[0].kind,'missing_node');});
+test('detects cycles',()=>{const r=analyze({nodes:[{id:'a',references:[{target:'b'}]},{id:'b',references:[{target:'a'}]}]},['a']);assert.equal(r.alerts.some(x=>x.kind==='cycle'),true);});
+test('clean graph means references traced, not legal clearance',()=>{const r=analyze({nodes:[{id:'x',status:'reviewed_sections',references:[]}]},['x']);assert.equal(r.assessment,'REFERENCES_TRACED');assert.match(r.disclaimer,/not a legal determination/);});
