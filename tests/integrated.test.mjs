@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';import{readFileSync}from'node:fs';import{analyzeIntegrated}from'../packages/integrated-trace/engine.mjs';
+const tx=JSON.parse(readFileSync(new URL('../research/transactions/DEMO-CN001-0001.json',import.meta.url)));
+const clauses=JSON.parse(readFileSync(new URL('../research/sec-contracts/us-china/CN-001.analysis.json',import.meta.url)));
+test('maps origin evidence issues to cited records',()=>{const r=analyzeIntegrated(tx,clauses);assert.ok(r.clause_links.some(x=>x.section==='7.6'&&x.source_url?.startsWith('https://www.sec.gov/')))});
+test('does not determine liability, recovery or forum',()=>{const r=analyzeIntegrated(tx,clauses);assert.ok(Object.values(r.conclusions).every(x=>x==='not_determined'))});
+test('keeps actual shipment and contract applicability unverified',()=>{const r=analyzeIntegrated(tx,clauses);assert.ok(r.blockers.some(x=>x.code==='IOR_UNVERIFIED'));assert.ok(r.clause_links.every(x=>x.applicability==='unverified'))});
+test('identifies separate public and private processes',()=>{const r=analyzeIntegrated(tx,clauses);assert.notEqual(r.public_law.process,r.private_law.process)});
+test('refuses real-world data without synthetic flag',()=>assert.throws(()=>analyzeIntegrated({...tx,synthetic:false},clauses),/synthetic/));
+test('refuses wrong contract',()=>assert.throws(()=>analyzeIntegrated({...tx,contract:{research_id:'other'}},clauses),/mismatch/));
+test('rejects unknown issue',()=>assert.throws(()=>analyzeIntegrated(tx,clauses,'unsupported'),/Unknown/));
+test('missing mapped section becomes flagged',()=>{const c=structuredClone(clauses);c.records=c.records.filter(x=>x.section_as_printed!=='7.6');assert.ok(analyzeIntegrated(tx,c).blockers.some(x=>x.code==='CLAUSE_NOT_MAPPED'))});
+test('produces graph references and evidence warnings',()=>{const r=analyzeIntegrated(tx,clauses);assert.ok(r.dependency_trace.dependencies.length>0);assert.equal(r.dependency_trace.assessment,'INCOMPLETE_EVIDENCE')});
